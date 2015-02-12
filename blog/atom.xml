@@ -1,0 +1,1129 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+  <title>Make it Real - Blog</title>
+  <link href="http://makeitreal.camp/blog/"/>
+  <link type="application/atom+xml" rel="self" href="http://makeitreal.camp/atom.xml"/>
+  <updated>2015-02-09T02:06:13+00:00</updated>
+  <id>http://makeitreal.camp/blog/</id>
+  <author>
+    <name>Make it Real</name>
+    <email>info@makeitreal.camp</email>
+  </author>
+
+  
+  <entry>
+    <id>http://makeitreal.camp/blog/2015/01/25/felicitaciones-lo-hicieron-realidad</id>
+    <link type="text/html" rel="alternate" href="http://makeitreal.camp/blog/2015/01/25/felicitaciones-lo-hicieron-realidad/"/>
+    <title>¡Felicitaciones, lo hicieron realidad!</title>
+    <updated>2015-01-25T17:40:58+00:00</updated>
+    <author>
+      <name>Germán Escobar</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;img src=&quot;/images/screenshots.jpg&quot; alt=&quot;Screenshots&quot; class=&quot;photo&quot; /&gt;&lt;/p&gt;
+
+&lt;p class=&quot;photo-description&quot;&gt;Los landings de los proyectos personales que presentaron en el Demo Day.&lt;/p&gt;
+
+&lt;p&gt;Es indescriptible la alegría y el orgullo que sentía mientras presentaban sus proyectos personales el pasado viernes 23 de Enero durante el Demo Day. El tiempo fue corto y no todas las presentaciones salieron perfectas, pero conocía todos los proyectos y el increíble esfuerzo que pusieron para hacerlos realidad. Además de Ruby on Rails, PostgreSQL, HTML5, CSS3, y jQuery, utilizaron tecnologías muy interesantes como Redis, Web Sockets, los API de Google Maps y Google Drive, Web-RTC, S3, HStore, etc. Fue el resultado de 12 semanas de intenso aprendizaje y trabajo.&lt;/p&gt;
+
+&lt;p&gt;El 10 de Octubre del 2014 llegué a Atom House faltando 5 minutos para las 9:00 a.m. Ya todos habían llegado y estaban esperando en el corredor principal de la casa. A la mayoría solo los había visto por Skype. Fue muy emocionante conocer a las 11 personas aceptadas para la primera versión del programa.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/workshop-first-day.jpg&quot; alt=&quot;First Workshop&quot; class=&quot;photo&quot; /&gt;&lt;/p&gt;
+
+&lt;p class=&quot;photo-description&quot;&gt;El primer día hicimos un workshop y creamos una aplicación completa entre todos.&lt;/p&gt;
+
+&lt;p&gt;El bootcamp fue intenso. Hubo momentos de frustración. Aprender a programar no es imposible pero requiere mucha dedicación, una gran concentración y una actitud optimista para enfrentar temas que al principio parecen imposibles. Cada reto es diferente y tiene su propia dosis de aprendizaje y frustración. Gran parte del programa es aprender a lidiar con esa sensación.&lt;/p&gt;
+
+&lt;p&gt;Pero también hubo incontables momentos de alegría. Cuando se logra superar algún reto de programación, el cerebro libera dopamina, también llamada la “hormona de la felicidad”. Lo más gratificante era escucharlos gritar “¡sí!”, o levantarse con una enorme sonrisa, cuando algo les funcionaba.&lt;/p&gt;
+
+&lt;p&gt;El contenido y las charlas diarias les dieron las bases del conocimiento. Los retos los enfrentaron a problemas no guiados similares a los del mundo real. Los talleres reforzaron el contenido y afianzaron el conocimiento. El hackathon les dio la seguridad que necesitaban para enfrentarse a problemas más complejos, y los proyectos pusieron en práctica todos los conocimientos adquiridos, especialmente la capacidad de aprender e implementar nuevas tecnologías.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/first-hackathon.jpg&quot; alt=&quot;First Hackathon&quot; class=&quot;photo&quot; /&gt;&lt;/p&gt;
+
+&lt;p class=&quot;photo-description&quot;&gt;Andrés, Miguel y Sebastián ganaron el Hackathon con su aplicación MoneApp.&lt;/p&gt;
+
+&lt;p&gt;Ahora poseen dos habilidades (superpoderes) que solo una mínima fracción de la sociedad tiene: &lt;strong&gt;la capacidad de aprender sobre cualquier tema, y la posibilidad de implementar y hacer realidad sus propias ideas&lt;/strong&gt;. Son los superpoderes que les van a permitir lograr sus objetivos, ya sea para encontrar un mejor empleo, o para salir a emprender. No los subestimen, y úsenlos para hacer el bien ;)&lt;/p&gt;
+
+&lt;p&gt;Han sido un grupo increíble y es muy emocionante ver todo lo que aprendieron y lo que crearon. &lt;strong&gt;Sigan aprendiendo, sigan creando. Compartan el conocimiento con otros. Sueñen. Intenten. Iteren. Recuerden que uno fracasa solo cuando lo deja de intentar.&lt;/strong&gt; Y nunca olviden que el mundo necesita más personas como ustedes y que cada uno puede marcar la diferencia. &lt;/p&gt;
+
+&lt;p&gt;!Felicitaciones y mucha suerte en esta etapa de post-bootcamp!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/first-group.jpg&quot; alt=&quot;We&#39;ll miss you&quot; /&gt;&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <id>http://makeitreal.camp/blog/2014/12/27/formularios-de-busqueda-en-rails</id>
+    <link type="text/html" rel="alternate" href="http://makeitreal.camp/blog/2014/12/27/formularios-de-busqueda-en-rails/"/>
+    <title>Formularios de Búsqueda en Rails</title>
+    <updated>2014-12-27T17:40:58+00:00</updated>
+    <author>
+      <name>Germán Escobar</name>
+    </author>
+    <content type="html">&lt;p&gt;En Ruby on Rails, los formularios generalmente se usan para crear o editar modelos. Sin embargo, un caso de uso muy frecuente es el de buscar o filtrar información usando un formulario. Por ejemplo, imaginemos una aplicación que tiene una lista de gastos que se puede filtrar por los siguientes criterios:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;El concepto del gasto.&lt;/li&gt;
+  &lt;li&gt;La categoría a la que pertenece el gasto.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;La siguiente imagen muestra la lista de gastos y el formulario de búsqueda que queremos implementar.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/mis-finanzas.png&quot; alt=&quot;Mis Finanzas&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Cuando creamos un formulario para crear o editar un modelo, generalmente utilizamos el tag &lt;code&gt;form_for&lt;/code&gt;. Sin embargo, &lt;strong&gt;existe otro tag llamado &lt;code&gt;form_tag&lt;/code&gt; que se utiliza para crear formularios con otros fines diferentes al CRUD&lt;/strong&gt; y es el que vamos a utilizar para nuestro formulario de búsqueda.&lt;/p&gt;
+
+&lt;p&gt;También es importante tener en cuenta que, &lt;strong&gt;en vez de un llamado &lt;code&gt;POST&lt;/code&gt;, queremos hacer un llamado &lt;code&gt;GET&lt;/code&gt;. De esta forma podemos compartir la URL con los criterios de búsqueda&lt;/strong&gt; por correo o por cualquier otro medio. Por ejemplo, la URL &lt;code&gt;http://midominio.com/expenses?concept=corral&amp;amp;category=4&lt;/code&gt; listaría los gastos que contengan la cadena “corral” en el concepto, y que pertenezcan a la categoría 4 (a esto se le conoce como Bookmarkable URL’s o RESTful URL’s).&lt;/p&gt;
+
+&lt;p&gt;Teniendo en cuenta los dos puntos anteriores, el markup del formulario sería el siguiente:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;overflow erb&quot;&gt;&amp;lt;%= form_tag expenses_path, method: :get do %&amp;gt;
+  &amp;lt;div class=&amp;quot;form-group&amp;quot;&amp;gt;
+    &amp;lt;%= text_field_tag :concept, params[:concept], class: &amp;quot;form-control&amp;quot;, placeholder: &amp;quot;Concepto&amp;quot; %&amp;gt;
+  &amp;lt;/div&amp;gt;
+  &amp;lt;div class=&amp;quot;form-group&amp;quot;&amp;gt;
+    &amp;lt;%= select_tag :category_id, options_from_collection_for_select(Category.all, &amp;quot;id&amp;quot;, &amp;quot;name&amp;quot;, params[:category_id]), prompt: &amp;quot;Categor&amp;#237;a&amp;quot;, class: &amp;quot;form-control&amp;quot; %&amp;gt;
+  &amp;lt;/div&amp;gt;
+  &amp;lt;%= submit_tag &amp;quot;Buscar&amp;quot;, name: nil, class: &amp;quot;btn btn-primary btn-md&amp;quot; %&amp;gt;
+&amp;lt;% end %&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;La primera línea (el &lt;code&gt;form_tag&lt;/code&gt;) genera el siguiente HTML:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;html&quot;&gt;&amp;lt;form action=&amp;quot;/expenses&amp;quot; method=&amp;quot;get&amp;quot;&amp;gt;
+  ...
+&amp;lt;/form&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Fíjate que estamos enviando el formulario a la misma acción que utilizamos para listar los gastos (&lt;code&gt;/expenses&lt;/code&gt;). Veamos la implementación de esa acción en el controlador:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;overflow ruby&quot;&gt;class ExpensesController &amp;lt; ApplicationController
+  def index
+    @expenses = Expense.order(&quot;date DESC&quot;)
+    if params[:concept].present?
+      @expenses = @expenses.where(&quot;concept ILIKE ?&quot;, &quot;%#{params[:concept]}%&quot;)
+    end
+    if params[:category_id].present?
+      @expenses = @expenses.where(&quot;category_id = ?&quot;, params[:category_id])
+    end
+  end
+end&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Nota:&lt;/strong&gt; En este trozo de código estoy utilizando &lt;code&gt;ILIKE&lt;/code&gt; que es una funcionalidad exclusiva de PostgreSQL para ignorar mayúsculas o minúsculas al hacer la comparación.&lt;/p&gt;
+
+&lt;p&gt;El hash &lt;code&gt;params&lt;/code&gt; recibe los datos del formulario que vienen en el URL. Si no recibimos alguno de los parámetros (&lt;code&gt;concept&lt;/code&gt; o &lt;code&gt;category_id&lt;/code&gt;), simplemente no tenemos en cuenta ese criterio de búsqueda.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Crear un formulario de búsqueda en Ruby on Rails es muy fácil. Solo debes tener en cuenta algunos detalles:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Utilizar &lt;code&gt;form_tag&lt;/code&gt; en vez de &lt;code&gt;form_for&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;Los tags de los campos también son diferentes a los que se utilizan en &lt;code&gt;form_for&lt;/code&gt;. La documentación de estos campos se encuentra en &lt;a href=&quot;http://guides.rubyonrails.org/form_helpers.html&quot;&gt;las guías de Rails&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Se recomienda utilizar el método &lt;code&gt;GET&lt;/code&gt; en vez de &lt;code&gt;POST&lt;/code&gt; para un formulario de búsqueda.&lt;/li&gt;
+  &lt;li&gt;Generalmente puedes reutilizar el mismo controlador y la misma acción que utilizas para listar.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Espero que este post te ayude a crear tus formularios de búsqueda. Puedes consultar el código fuente de la aplicación en &lt;a href=&quot;https://github.com/makeitrealcamp/rails-search-form&quot;&gt;Github&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;ms-recursos&quot;&gt;Más Recursos&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://railscasts.com/episodes/37-simple-search-form&quot;&gt;Railscast #37 - Simple Search Form&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://guides.rubyonrails.org/form_helpers.html&quot;&gt;Rails Guides - Form Helpers&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.jorgecoca.com/buils-search-form-ruby-rails/&quot;&gt;How to build a simple search form with Ruby on Rails&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <id>http://makeitreal.camp/blog/2014/10/18/git-y-github</id>
+    <link type="text/html" rel="alternate" href="http://makeitreal.camp/blog/2014/10/18/git-y-github/"/>
+    <title>Git y Github</title>
+    <updated>2014-10-18T17:40:58+00:00</updated>
+    <author>
+      <name>Germán Escobar</name>
+    </author>
+    <content type="html">&lt;p&gt;Git es un &lt;strong&gt;sistema de control de versiones distribuido&lt;/strong&gt;, diseñado y desarrollado inicialmente por &lt;a href=&quot;http://en.wikipedia.org/wiki/Linus_Torvalds&quot; target=&quot;_blank&quot;&gt;Linus Torvalds&lt;/a&gt; en el 2005 cuando &lt;a href=&quot;http://en.wikipedia.org/wiki/BitKeeper&quot; target=&quot;_blank&quot;&gt;BitKeeper&lt;/a&gt;, el sistema de control de versiones que utilizaban para el desarrollo de Linux, cambiara su licencia y no permitiera su uso libre. En este post vamos a explicar qué es &lt;strong&gt;Git&lt;/strong&gt; y cómo se relaciona con &lt;strong&gt;&lt;a href=&quot;http://github.com/&quot; target=&quot;_blank&quot;&gt;Github&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Git&lt;/strong&gt;, y en general un sistema de control de versiones, tiene dos objetivos principales:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Guardar el historial de cambios sobre el código de un proyecto.&lt;/li&gt;
+  &lt;li&gt;Permitir a varias personas contribuir simultáneamente sobre un mismo proyecto.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Para guardar el historial de cambios podríamos crear una nueva carpeta en nuestro computador y copiar todo el proyecto cada vez que quisiéramos hacer un cambio. Eso no es muy diferente a lo que hace &lt;strong&gt;Git&lt;/strong&gt; por debajo cada vez que se hace un commit.&lt;/p&gt;
+
+&lt;div class=&quot;well&quot;&gt;
+  &lt;h3&gt;¿Qué es un commit?&lt;/h3&gt;
+  Un commit es una fotografía (snapshot) de tu proyecto en un momento determinado. Un commit tiene una fecha y hora, un mensaje que describe los cambios que se hicieron desde el último commit, y un autor.
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Git es una aplicación de consola con varios subcomandos&lt;/strong&gt; que nos permiten, entre otras cosas, hacer commits, ver los cambios a los que no les hemos hecho commit, listar los commits, y ver la diferencia entre commits.&lt;/p&gt;
+
+&lt;p&gt;Después de que &lt;a href=&quot;http://git-scm.com/book/en/Getting-Started-Installing-Git&quot; target=&quot;_blank&quot;&gt;has instalado Git&lt;/a&gt;, puedes abrir una consola y ejecutar el comando &lt;code&gt;git&lt;/code&gt; sin parámetros. Verás el uso general del comando y algunos de los subcomandos más utilizados:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;germanescobar ~$ git
+usage: git [--version] [--help] [-C &amp;lt;path&amp;gt;] [-c name=value]
+           [--exec-path[=&amp;lt;path&amp;gt;]] [--html-path] [--man-path] [--info-path]
+           [-p|--paginate|--no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=&amp;lt;path&amp;gt;] [--work-tree=&amp;lt;path&amp;gt;] [--namespace=&amp;lt;name&amp;gt;]
+           &amp;lt;command&amp;gt; [&amp;lt;args&amp;gt;]
+
+The most commonly used git commands are:
+   add        Add file contents to the index
+   bisect     Find by binary search the change that introduced a bug
+   branch     List, create, or delete branches
+   ...
+
+&amp;#39;git help -a&amp;#39; and &amp;#39;git help -g&amp;#39; lists available subcommands and some
+concept guides. See &amp;#39;git help &amp;lt;command&amp;gt;&amp;#39; or &amp;#39;git help &amp;lt;concept&amp;gt;&amp;#39;
+to read about a specific subcommand or concept.&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;cmo-utilizar-git&quot;&gt;¿Cómo utilizar Git?&lt;/h2&gt;
+
+&lt;p&gt;El flujo más simple de trabajo con &lt;strong&gt;Git&lt;/strong&gt; es el siguiente:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;1.&lt;/strong&gt; Inicializa el repositorio (esto va a crear una carpeta oculta &lt;code&gt;.git&lt;/code&gt; dentro del proyecto):&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;$ git init&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;2.&lt;/strong&gt; Trabaja en el código: crea, modifica y elimina archivos. &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;3.&lt;/strong&gt; Selecciona los cambios que vas a incluir en el siguiente commit:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;$ git add index.html
+$ git add style.css&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Puedes incluir todos los cambios con el siguiente comando:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;$ git add -A&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;4.&lt;/strong&gt; Haz commit:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;$ git commit -m &quot;El mensaje del commit&quot;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;5.&lt;/strong&gt; Repite los pasos 2, 3, y 4.&lt;/p&gt;
+
+&lt;div class=&quot;well&quot;&gt;
+  &lt;h3&gt;¿Cada cuánto hacer commit?&lt;/h3&gt;
+  Puedes hacer commit tan seguido como quieras. No hay una regla de oro. Mi sugerencia es agrupar un número de cambios que puedas describir en una línea y que tengan sentido en el historial del código. Puede ser un único cambio en un archivo, o múltiples cambios en varios archivos.
+&lt;/div&gt;
+
+&lt;div class=&quot;well&quot;&gt;
+  &lt;h3&gt;¿Cómo escribir un mensaje de commit?&lt;/h3&gt;
+  La primera línea debe tener 50 caracteres, o menos, y es obligatoria. La pregunta que debería contestar la primera línea es: ¿qué hace este commit? Ejemplos de respuestas: &quot;Cambia el tamaño de la fuente a #666&quot; o &quot;Crea el modelo User&quot;.&lt;br /&gt;&lt;br /&gt;
+
+  Opcionalmente, después de la primera línea, va una línea en blanco y más detalles de los cambios que incluye el commit: efectos secundarios, explicación de por qué se está haciendo el cambio, etc.
+&lt;/div&gt;
+
+&lt;h2 id=&quot;github&quot;&gt;Github&lt;/h2&gt;
+
+&lt;p&gt;Los pasos que describimos anteriormente almacenan el historial del código localmente en la carpeta oculta &lt;code&gt;.git&lt;/code&gt; dentro de la raiz de tu proyecto (repositorio local). &lt;strong&gt;Si pierdes tu computador, pierdes tu código y su historial&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Podrías hacerle backup, o sincronizarlo en Dropbox (o algún servicio similar), pero si quieres que varias personas trabajen sobre el mismo proyecto, eso no va a funcionar. &lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://github.com/&quot; target=&quot;_blank&quot;&gt;Github&lt;/a&gt; nos brinda la posibilidad de crear un repositorio remoto (una réplica de nuestro repositorio local) en el que varios desarrolladores pueden colaborar, con herramientas que facilitan esa colaboración. &lt;a href=&quot;http://github.com/&quot; target=&quot;_blank&quot;&gt;Github&lt;/a&gt; es gratis para proyectos Open Source, pero si quieres tener repositorios privados, debes pagar una mensualidad (los planes empiezan en 7 dólares al mes).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;El primer paso para trabajar con &lt;a href=&quot;http://github.com/&quot; target=&quot;_blank&quot;&gt;Github&lt;/a&gt; es registrarte, crear un repositorio y seguir las instrucciones que aparecen en la pantalla&lt;/strong&gt;. Puedes empezar con un nuevo repositorio, o subir un repositorio local.&lt;/p&gt;
+
+&lt;p&gt;Recuerda que al hacer commit en tu repositorio local, esos cambios no se ven reflejados automáticamente en el repositorio remoto. Debes hacer &lt;code&gt;git push&lt;/code&gt; para subir tus commits locales al repositorio remoto y &lt;code&gt;git pull&lt;/code&gt; para traer los commits que otros han subido a tu repositorio local.&lt;/p&gt;
+
+&lt;p&gt;Por ejemplo, para actualizar tu repositorio local con los cambios que han hecho otros desarrolladores en el repositorio remoto puedes ejecutar el siguiente comando:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;$ git pull&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Por otro lado, para subir los commits locales que aún no existen en el repositorio remoto puedes ejecutar un comando similar al siguiente (los parámetros pueden variar según el repositorio y la rama que quieras subir):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;$ git push origin master&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;flujos-de-trabajo&quot;&gt;Flujos de trabajo&lt;/h2&gt;
+
+&lt;p&gt;Una ventaja/desventaja de Git es que es muy flexible y no hay una única forma de usarlo. En la sección &lt;strong&gt;¿Cómo utilizar Git?&lt;/strong&gt; describimos el flujo de trabajo más simple, pero no necesariamente el más recomendado. La razón es que &lt;strong&gt;Git es muy estricto en el orden de los commits&lt;/strong&gt; y ese flujo de trabajo puede crear conflictos si varios están trabajando sobre el mismo proyecto (al hacer push).&lt;/p&gt;
+
+&lt;p&gt;Para eso existen las ramas (branches).&lt;/p&gt;
+
+&lt;div class=&quot;well&quot;&gt;
+  &lt;h3&gt;¿Qué es un branch?&lt;/h3&gt;
+  Las ramas (branches) en Git son una poderosa herramienta que les permite a los miembros de un equipo trabajar en paralelo sobre un mismo proyecto y hacer experimientos que pueden eventualmente integrarse a la rama principal (master).
+&lt;/div&gt;
+
+&lt;p&gt;Hay varias formas de utilizar branches para el trabajo en equipo y cada empresa lo hace diferente. Si quieres conocer el flujo que utilizamos en &lt;a href=&quot;http://www.elibom.com/&quot; target=&quot;_blank&quot;&gt;elibom.com&lt;/a&gt; haz &lt;a href=&quot;http://germanescobar.net/2012/12/23/git-workflow-at-elibom/&quot; target=&quot;_blank&quot;&gt;click acá&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;ms-recursos&quot;&gt;Más recursos&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Linus Torvalds explica Git &lt;a href=&quot;https://www.youtube.com/watch?v=4XpnKHJAok8&quot; target=&quot;_blank&quot;&gt;en este video del 2007&lt;/a&gt;, es largo pero vale la pena verlo.&lt;/li&gt;
+  &lt;li&gt;Un &lt;a href=&quot;https://try.github.io/&quot; target=&quot;_blank&quot;&gt;tutorial interactivo&lt;/a&gt; de Git.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://git-scm.com/book&quot; target=&quot;_blank&quot;&gt;El libro “oficial” de Git&lt;/a&gt; escrito por Scott Chacon.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Si tienes un verdadero interés por la programación y quieres aprender a diseñar e implementar tus propias aplicaciones Web no dudes en &lt;a href=&quot;/apply&quot;&gt;aplicar a Make it Real&lt;/a&gt;!&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <id>http://makeitreal.camp/blog/2014/10/12/javascript-jquery-y-ajax</id>
+    <link type="text/html" rel="alternate" href="http://makeitreal.camp/blog/2014/10/12/javascript-jquery-y-ajax/"/>
+    <title>JavaScript, jQuery y Ajax</title>
+    <updated>2014-10-12T17:40:58+00:00</updated>
+    <author>
+      <name>Germán Escobar</name>
+    </author>
+    <content type="html">&lt;p&gt;A mediados de los 90’s, la mayoría de sitios Web consistían de páginas estáticas sin ninguna interactividad. Algunos sitios ya generaban páginas dinámicas en el servidor, pero toda acción del usuario requería refrescar la página completamente para ver los cambios. Se necesitaba un lenguaje de programación que corriera en el navegador.&lt;/p&gt;
+
+&lt;h2 id=&quot;javascript&quot;&gt;JavaScript&lt;/h2&gt;
+
+&lt;p&gt;A finales del 1995 surge &lt;a href=&quot;http://en.wikipedia.org/wiki/JavaScript&quot; target=&quot;_blank&quot;&gt;JavaScript&lt;/a&gt;, un lenguaje creado por &lt;a href=&quot;http://en.wikipedia.org/wiki/Brendan_Eich&quot; target=&quot;_blank&quot;&gt;Brendan Eich&lt;/a&gt;, trabajando en ese entonces para &lt;a href=&quot;http://en.wikipedia.org/wiki/Netscape&quot; target=&quot;_blank&quot;&gt;Netscape&lt;/a&gt;. (&lt;strong&gt;No confundas &lt;a href=&quot;http://en.wikipedia.org/wiki/JavaScript&quot; target=&quot;_blank&quot;&gt;JavaScript&lt;/a&gt; con &lt;a href=&quot;http://en.wikipedia.org/wiki/Java_(programming_language)&quot; target=&quot;_blank&quot;&gt;Java&lt;/a&gt;&lt;/strong&gt;, son lenguajes muy diferentes; simplemente fue una movida de mercadeo porque Java era muy popular en ese momento). &lt;strong&gt;JavaScript permitía manipular HTML&lt;/strong&gt; y agregar interactividad en Netscape, que era el navegador más popular en ese momento.&lt;/p&gt;
+
+&lt;p&gt;Microsoft lanzó un lenguaje muy similar llamado &lt;a href=&quot;http://en.wikipedia.org/wiki/JScript&quot; target=&quot;_blank&quot;&gt;Jscript&lt;/a&gt; para Internet Explorer, y aunque hubo intentos de unificar el lenguaje, nunca hubo consenso. Para el momento en que Internet Explorer se convirtió en el navegador más popular, JavaScript ya era el estándar para escribir código interactivo en el navegador.&lt;/p&gt;
+
+&lt;p&gt;Pero había un problema. Aunque el lenguaje era muy similar en los dos navegadores, &lt;strong&gt;la forma de manipular HTML era muy diferente&lt;/strong&gt;. A medida que más navegadores aparecían en el mercado, el problema se hacía cada vez más inmanejable. Cada navegador lo hacía a su manera.&lt;/p&gt;
+
+&lt;h2 id=&quot;jquery&quot;&gt;jQuery&lt;/h2&gt;
+
+&lt;p&gt;En 2006 surge una librería de &lt;a href=&quot;http://en.wikipedia.org/wiki/JavaScript&quot; target=&quot;_blank&quot;&gt;JavaScript&lt;/a&gt; llamada &lt;a href=&quot;http://jquery.com/&quot; target=&quot;_blank&quot;&gt;jQuery&lt;/a&gt;, escrita por &lt;a href=&quot;http://en.wikipedia.org/wiki/John_Resig&quot; target=&quot;_blank&quot;&gt;John Resig&lt;/a&gt;, para solucionar las diferencias al manipular HTML y escuchar eventos en los navegadores. Aunque ya existían intentos similares en JavaScript, &lt;strong&gt;una de las genialidades de &lt;a href=&quot;http://jquery.com/&quot; target=&quot;_blank&quot;&gt;jQuery&lt;/a&gt; era que utilizaba los mismo selectores CSS para ubicar y manipular los diferentes elementos del DOM&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;well&quot;&gt;
+&lt;h3&gt;¿Qué es el DOM?&lt;/h3&gt;
+
+EL DOM (Document Object Model) es una representación de un documento HTML que nos permite interactuar con los elementos (etiquetas) del documento HTML. La estructura es en forma de árbol similar a como se organizan los directorios y archivos en un sistema operativo. Puedes encontrar más información del DOM &lt;a href=&quot;http://javascript.info/tutorial/dom-nodes&quot; target=&quot;_blank&quot;&gt;acá&lt;/a&gt;.
+&lt;/div&gt;
+
+&lt;p&gt;Veamos un ejemplo que cambia el color de un &lt;code&gt;div&lt;/code&gt; al hacer click:&lt;/p&gt;
+
+&lt;div class=&quot;square&quot; style=&quot;height: 100px; width: 100px; background: blue; margin: 0 auto 20px;&quot;&gt;&lt;/div&gt;
+
+&lt;pre&gt;&lt;code class=&quot;javascript&quot;&gt;jQuery(&#39;.square&#39;).click(function() {
+  jQuery(this).css(&#39;background&#39;, &#39;yellow&#39;);
+});&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;En este ejemplo estamos escuchando el evento &lt;code&gt;click&lt;/code&gt; sobre el &lt;code&gt;div&lt;/code&gt; con clase &lt;code&gt;square&lt;/code&gt; y cambiando el color a amarillo cuando el evento es disparado. (Recuerda descargar jQuery en &lt;a href=&quot;http://jquery.com/&quot;&gt;jquery.com&lt;/a&gt; e incluirlo en tu página para que el ejemplo funcione).&lt;/p&gt;
+
+&lt;p&gt;Podemos simplificar un poco más el ejemplo reemplazando la palabra &lt;code&gt;jQuery&lt;/code&gt; por &lt;code&gt;$&lt;/code&gt;, que ahorra algunos caracteres y es la forma más conocida:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;javascript&quot;&gt;$(&#39;.square&#39;).click(function() {
+  $(this).css(&#39;background&#39;, &#39;yellow&#39;);
+});&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;jQuery se encarga de las diferencias de los navegadores exponiendo una interfaz clara y fácil de usar que le permite a los desarrolladores concentrarse en la funcionalidad de la aplicación, y no en los detalles de cada navegador.&lt;/p&gt;
+
+&lt;h2 id=&quot;ajax&quot;&gt;Ajax&lt;/h2&gt;
+
+&lt;p&gt;¿Cómo intercambiar información con el servidor sin tener que refrescar la página? Ese es el problema que soluciona &lt;a href=&quot;http://en.wikipedia.org/wiki/Ajax_(programming)&quot; target=&quot;_blank&quot;&gt;Ajax&lt;/a&gt;. Recuerdo la primera vez que lo vi en acción en la página del &lt;a href=&quot;http://www.ausopen.com/&quot; target=&quot;_blank&quot;&gt;Australian Open&lt;/a&gt; viendo el puntaje en vivo; cada vez que cambiaba el puntaje de un partido, parpadeaba y se actualizaba en tiempo real.&lt;/p&gt;
+
+&lt;p&gt;Para entender Ajax, es importante primero entender &lt;a href=&quot;/2014/10/05/http-y-html/&quot; target=&quot;_blank&quot;&gt;cómo funciona el protocolo HTTP&lt;/a&gt;. &lt;strong&gt;La idea es que escribiendo un poco de JavaScript sea posible hacer una petición HTTP y recibir una respuesta del servidor con información que podemos utilizar para actualizar la página&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;La forma de utilizar Ajax en los navegadores es engorrosa y no la voy a mostrar acá. En cambio, jQuery ofrece una interfaz mucho más sencilla y unificada para todos los navegadores:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;javascript&quot;&gt;$.get(&#39;/url_to_fetch&#39;, function(data) {
+  // do something with data
+});&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;En este ejemplo estamos haciendo una petición HTTP a la ruta &lt;code&gt;/url_to_fetch&lt;/code&gt;. La respuesta la encontraremos en &lt;code&gt;data&lt;/code&gt;, que puede ser HTML, &lt;a href=&quot;http://en.wikipedia.org/wiki/XML&quot; target=&quot;_blank&quot;&gt;XML&lt;/a&gt;, &lt;a href=&quot;http://www.json.org/&quot; target=&quot;_blank&quot;&gt;JSON&lt;/a&gt;, o cualquier otra cosa. Últimamente el formato que más se utiliza es &lt;a href=&quot;http://www.json.org/&quot; target=&quot;_blank&quot;&gt;JSON&lt;/a&gt; sin embargo.&lt;/p&gt;
+
+&lt;div class=&quot;well&quot;&gt;
+&lt;h3&gt;¿Qué es XML y JSON?&lt;/h3&gt;
+
+&lt;p&gt;Son formatos de intercambio de información. Hace unos años &lt;a href=&quot;http://en.wikipedia.org/wiki/XML&quot; target=&quot;_blank&quot;&gt;XML (Extensible Markup Language)&lt;/a&gt; era muy popular, pero últimamente &lt;a href=&quot;http://www.json.org/&quot; target=&quot;_blank&quot;&gt;JSON (JavaScript Object Notation)&lt;/a&gt; es más usado. La razón es que &lt;a href=&quot;http://en.wikipedia.org/wiki/XML&quot; target=&quot;_blank&quot;&gt;XML&lt;/a&gt; es muy verboso y más difícil de interpretar.&lt;/p&gt;
+
+&lt;p&gt;Por ejemplo, podríamos representar un vuelo en &lt;a href=&quot;http://en.wikipedia.org/wiki/XML&quot; target=&quot;_blank&quot;&gt;XML&lt;/a&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;xml&quot;&gt;&amp;lt;flight&amp;gt;
+    &amp;lt;airline&amp;gt;Oceanic&amp;lt;/airline&amp;gt;
+    &amp;lt;number&amp;gt;815&amp;lt;/number&amp;gt;
+    &amp;lt;departure&amp;gt;
+        &amp;lt;iata&amp;gt;SYD&amp;lt;/iata&amp;gt;
+        &amp;lt;time&amp;gt;2004-09-22 14:55&amp;lt;/time&amp;gt;
+    &amp;lt;/departure&amp;gt;
+    &amp;lt;arrival&amp;gt;
+        &amp;lt;iata&amp;gt;LAX&amp;lt;/iata&amp;gt;
+        &amp;lt;time&amp;gt;2004-09-23 10:42&amp;lt;/time&amp;gt;
+    &amp;lt;/arrival&amp;gt;
+&amp;lt;/flight&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;O en &lt;a href=&quot;http://www.json.org/&quot; target=&quot;_blank&quot;&gt;JSON&lt;/a&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;javascrip&quot;&gt;{
+  &quot;airline&quot;: “Oceanic”,
+  &quot;number&quot;: 815,
+  &quot;departure&quot;: {
+   &quot;iata&quot;: “SYD”,
+   &quot;time&quot;: “2004-09-22 14:55”
+  },
+  &quot;arrival&quot;: {
+   &quot;iata&quot;: “LAX”,
+   &quot;time&quot;: “2004-09-23 10:42”
+  }
+}&lt;/code&gt;&lt;/pre&gt;
+
+Otra ventaja de &lt;a href=&quot;http://www.json.org/&quot; target=&quot;_blank&quot;&gt;JSON&lt;/a&gt; es que es muy fácil de manipular en JavaScript.
+&lt;/div&gt;
+
+&lt;h2 id=&quot;ms-recursos&quot;&gt;Más recursos&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://try.jquery.com/&quot;&gt;http://try.jquery.com/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://javascript.info/tutorial/dom-nodes&quot;&gt;http://javascript.info/tutorial/dom-nodes&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://teamtreehouse.com/library/ajax-basics&quot;&gt;http://teamtreehouse.com/library/ajax-basics&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Si tienes un verdadero interés por la programación y quieres aprender a diseñar e implementar tus propias aplicaciones Web no dudes en &lt;a href=&quot;/apply&quot;&gt;aplicar a Make it Real&lt;/a&gt;!&lt;/p&gt;
+
+&lt;script&gt;
+	jQuery(&#39;.square&#39;).click(function() {
+	  jQuery(this).css(&#39;background&#39;, &#39;yellow&#39;);
+	});
+&lt;/script&gt;
+
+</content>
+  </entry>
+  
+  <entry>
+    <id>http://makeitreal.camp/blog/2014/10/05/http-y-html</id>
+    <link type="text/html" rel="alternate" href="http://makeitreal.camp/blog/2014/10/05/http-y-html/"/>
+    <title>HTTP y HTML</title>
+    <updated>2014-10-05T17:40:58+00:00</updated>
+    <author>
+      <name>Germán Escobar</name>
+    </author>
+    <content type="html">&lt;p&gt;¿Qué es HTTP? ¿Qué es HTML? ¿Qué relación tienen? En este post vamos a intentar responder estas preguntas. Pero antes un poco de historia.&lt;/p&gt;
+
+&lt;p&gt;Aunque Internet fue desarrollado a finales de los 60’s y principios de los 70’s, no fue sino hasta 1989 que &lt;a href=&quot;http://en.wikipedia.org/wiki/Tim_Berners-Lee&quot; target=&quot;_blank&quot;&gt;Tim Berners-Lee&lt;/a&gt; propuso el proyecto World Wide Web (WWW) trabajando para &lt;a href=&quot;http://en.wikipedia.org/wiki/CERN&quot; target=&quot;_blank&quot;&gt;CERN&lt;/a&gt;, que era en su momento el nodo de Internet más grande en Europa.&lt;/p&gt;
+
+&lt;blockquote&gt;“Solo tuve que tomar la idea del HyperText y conectarla con TCP y DNS, y ta-da! Surgió el World Wide Web …&quot; -- Tim Berners Lee&lt;/blockquote&gt;
+
+&lt;p&gt;En ese momento empezó el desarrollo de &lt;strong&gt;HTML (Hyper Text Markup Language)&lt;/strong&gt; para definir la estructura de documentos con vínculos a otros documentos, y &lt;strong&gt;HTTP (Hyper Text Transfer Protocolo)&lt;/strong&gt; como el protocolo por el que se transmitiría HTML.&lt;/p&gt;
+
+&lt;p&gt;Y es que parece magia cuando abrimos un navegador e ingresamos a algún sitio como &lt;a href=&quot;http://www.makeitreal.camp/&quot;&gt;http://www.makeitreal.camp/&lt;/a&gt;. ¿Qué ocurre por debajo? El navegador realiza varios pasos que son invisibles para nosotros y que vamos a describir a continuación:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Traducir el dominio a la dirección IP del servidor.&lt;/li&gt;
+  &lt;li&gt;Abrir una conexión con el servidor.&lt;/li&gt;
+  &lt;li&gt;Enviar un mensaje HTTP solicitando el recurso.&lt;/li&gt;
+  &lt;li&gt;Interpretar el mensaje HTTP de respuesta.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;traduccin-del-dominio&quot;&gt;Traducción del dominio&lt;/h2&gt;
+
+&lt;p&gt;Todo dispositivo conectado a Internet (computador, tablet, smarphone, etc.) está identificado por una &lt;strong&gt;dirección IP&lt;/strong&gt; única (p.e. 31.13.69.160). &lt;strong&gt;Los dominios&lt;/strong&gt; (p.e. www.google.com, www.facebook.com) no son más que un nombre de fácil recordación para los humanos.&lt;/p&gt;
+
+&lt;p&gt;Cuando ingresamos el nombre de un dominio en el navegador, se hace un llamado a un &lt;strong&gt;DNS (Domain Name Server)&lt;/strong&gt; que hace la traducción del dominio a la &lt;strong&gt;dirección IP&lt;/strong&gt;. Un &lt;strong&gt;DNS&lt;/strong&gt; es un servicio con una gran base de datos que contiene la &lt;strong&gt;dirección IP&lt;/strong&gt; a la que está asociada cada &lt;strong&gt;dominio&lt;/strong&gt; en Internet. Cuando alguien registra un nuevo &lt;strong&gt;dominio&lt;/strong&gt;, el registrador debe avisar a todos los &lt;strong&gt;DNS’s&lt;/strong&gt; (públicos y privados) que actualicen sus bases de datos. Puedes configurar el &lt;strong&gt;DNS&lt;/strong&gt; en las propiedades de red de tu computador. Muchas personas cambian la configuración para usar el &lt;a href=&quot;https://developers.google.com/speed/public-dns/&quot; target=&quot;_blank&quot;&gt;DNS público de Google&lt;/a&gt;, por ejemplo.&lt;/p&gt;
+
+&lt;h2 id=&quot;abrir-la-conexin&quot;&gt;Abrir la conexión&lt;/h2&gt;
+
+&lt;p&gt;Una vez que el navegador tiene &lt;strong&gt;la dirección IP&lt;/strong&gt; del servidor, el siguiente paso es abrir una conexión a &lt;strong&gt;un puerto&lt;/strong&gt; específico en el servidor. Generalmente omitimos &lt;strong&gt;el puerto&lt;/strong&gt; cuando escribimos una dirección en el navegador; en ese caso se asume &lt;strong&gt;el puerto 80&lt;/strong&gt;. Es posible especificar explícitamente &lt;strong&gt;el puerto&lt;/strong&gt; de la siguiente forma: &lt;a href=&quot;http://www.google.com:80/&quot;&gt;http://www.google.com:80/&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;well&quot;&gt;
+&lt;h3&gt;¿Qué es un puerto?&lt;/h3&gt;
+
+Es la forma de identificar, en un servidor, la aplicación a la que se le deben enrutar los datos que envían los clientes. Por ejemplo, los servidores de Google, Facebook, etc., tienen una aplicación (llamada servidor Web) que recibe conexiones y peticiones HTTP a través del puerto 80.
+&lt;/div&gt;
+
+&lt;h2 id=&quot;enviar-el-mensaje-http&quot;&gt;Enviar el mensaje HTTP&lt;/h2&gt;
+
+&lt;p&gt;Una vez que la conexión con el servidor está abierta, el navegador envía un mensaje de acuerdo al protocolo HTTP.&lt;/p&gt;
+
+&lt;div class=&quot;well&quot;&gt;
+&lt;h3&gt;¿Qué es un protocolo?&lt;/h3&gt;
+
+&lt;p&gt;Es un conjunto de reglas de conversación que se establecen para que las máquinas entiendan un intercambio de mensajes. La especificación del protocolo HTTP versión 1.1 se puede encontrar &lt;a href=&quot;http://tools.ietf.org/html/rfc2616&quot; target=&quot;_blank&quot;&gt;acá&lt;/a&gt;. Si tienes un tiempo libre no dudes en ojearla, aprender sobre el protocolo HTTP es una muy buena inversión de tiempo.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;HTTP (Hyper Text Transfer Protocol) es un protocolo de petición/respuesta&lt;/strong&gt;. Un cliente, por ejemplo un navegador, envía un mensaje al servidor en el que especifíca &lt;a href=&quot;http://www.w3schools.com/tags/ref_httpmethods.asp&quot; target=&quot;_blank&quot;&gt;el método&lt;/a&gt;, URI (la ruta del recurso que estamos solicitando), la versión del protocolo, y, opcionalmente, el cuerpo con el contenido del mensaje. El servidor responde con otro mensaje que incluye &lt;a href=&quot;http://www.w3schools.com/tags/ref_httpmessages.asp&quot; target=&quot;_blank&quot;&gt;el código de estado de la respuesta&lt;/a&gt;, algunos encabezados, y el cuerpo con el contenido de la respuesta.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Veamos un ejemplo de un mensaje de petición HTTP (asumiendo que ya tenemos una conexión abierta al servidor de Google):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;http&quot;&gt;GET /doc.html HTTP/1.1
+Host: www.google.com&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;En la primera línea del mensaje estamos solicitando el recurso &lt;code&gt;/doc.html&lt;/code&gt;. La segunda línea es un encabezado. Este mensaje no lleva cuerpo. &lt;/p&gt;
+
+&lt;h2 id=&quot;recibir-el-mensaje-de-respuesta-http&quot;&gt;Recibir el mensaje de respuesta HTTP&lt;/h2&gt;
+
+&lt;p&gt;Después de que el navegador ha enviado una petición, el servidor retorna una respuesta de regreso. Por ejemplo, la respuesta de la petición anterior es la siguiente:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;http&quot;&gt;HTTP/1.1 404 Not Found
+Content-Type: text/html; charset=UTF-8
+X-Content-Type-Options: nosniff
+Date: Sun, 05 Oct 2014 17:49:34 GMT
+Server: sffe
+Content-Length: 1433
+X-XSS-Protection: 1; mode=block
+Alternate-Protocol: 80:quic,p=0.002
+
+&amp;lt;!DOCTYPE html&amp;gt;
+&amp;lt;html lang=en&amp;gt;
+  &amp;lt;meta charset=utf-8&amp;gt;
+  &amp;lt;meta name=viewport content=&amp;quot;initial-scale=1, minimum-scale=1, width=device-width&amp;quot;&amp;gt;
+  &amp;lt;title&amp;gt;Error 404 (Not Found)!!1&amp;lt;/title&amp;gt;
+  &amp;lt;style&amp;gt;
+    ...
+  &amp;lt;/style&amp;gt;
+  &amp;lt;a href=//www.google.com/&amp;gt;&amp;lt;span id=logo aria-label=Google&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt;
+  &amp;lt;p&amp;gt;&amp;lt;b&amp;gt;404.&amp;lt;/b&amp;gt; &amp;lt;ins&amp;gt;That’s an error.&amp;lt;/ins&amp;gt;
+  &amp;lt;p&amp;gt;The requested URL &amp;lt;code&amp;gt;/doc.html&amp;lt;/code&amp;gt; was not found on this server.  &amp;lt;ins&amp;gt;That’s all we know.&amp;lt;/ins&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;La línea más importante es la primera, que nos dice que el código de la respuesta es 404 No Encontrado. Después tenemos algunos encabezados. El primero nos dice que en el cuerpo del mensaje vamos a encontrar código HTML. Por último, después de la línea en blanco viene el cuerpo del mensaje.&lt;/p&gt;
+
+&lt;p&gt;El navegador interpreta la respuesta, identifica que en el cuerpo del mensaje viene código HTML (podría venir una imágen, audio, archivo PDF, etc.) y lo muestra en la pantalla.&lt;/p&gt;
+
+&lt;div class=&quot;well&quot;&gt;
+  &lt;h3&gt;Developer Tools&lt;/h3&gt;
+
+  Puedes ver las peticiones y respuestas HTTP que envía y recibe el navegador a través del Developer Tools de tu navegador. Mira &lt;a href=&quot;https://www.youtube.com/watch?v=z1TkfcC53G0&quot; target=&quot;_blank&quot;&gt;este video&lt;/a&gt; para aprender cómo hacerlo.
+&lt;/div&gt;
+
+&lt;h2 id=&quot;html&quot;&gt;HTML&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;HTML&lt;/strong&gt; es un lenguaje que nos permite definir la estructura de un documento que los navegadores interpretan y muestran en la pantalla. Por ejemplo:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;html&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;
+&amp;lt;html&amp;gt;
+  &amp;lt;head&amp;gt;
+	&amp;lt;title&amp;gt;Este t&amp;#237;tulo va en la pestaña del navegador&amp;lt;/title&amp;gt;
+  &amp;lt;/head&amp;gt;
+  &amp;lt;body&amp;gt;
+  	&amp;lt;h1&amp;gt;Hola Mundo&amp;lt;/h1&amp;gt;
+  &amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;HTML&lt;/strong&gt; está compuesto de dos grandes secciones: &lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt; y &lt;code&gt;&amp;lt;body&amp;gt;&lt;/code&gt;. En el &lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt; especificamos información que no es visible en la pantalla como el título del documento, referencia a otros archivos, etc. En el &lt;code&gt;&amp;lt;body&amp;gt;&lt;/code&gt; van las etiquetas con la estructura del documento: encabezados (&lt;code&gt;&amp;lt;h1&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;h2&amp;gt;&lt;/code&gt;, etc.), párrafos (&lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt;), links (&lt;code&gt;&amp;lt;a&amp;gt;&lt;/code&gt;), listas (&lt;code&gt;&amp;lt;ul&amp;gt;&lt;/code&gt; y &lt;code&gt;&amp;lt;ol&amp;gt;&lt;/code&gt;), tablas (&lt;code&gt;&amp;lt;table&amp;gt;&lt;/code&gt;), formularios (&lt;code&gt;&amp;lt;form&amp;gt;&lt;/code&gt;), etc.&lt;/p&gt;
+
+&lt;p&gt;Generalmente, el código &lt;strong&gt;HTML (Hyper Text Markup Language)&lt;/strong&gt; viaja a través de &lt;strong&gt;HTTP (Hyper Text Transfer Protocol)&lt;/strong&gt;. Pero es posible crear un archivo con extensión &lt;code&gt;.html&lt;/code&gt; y abrirlo en un navegador directamente.&lt;/p&gt;
+
+&lt;div class=&quot;well&quot;&gt;
+  &lt;h3&gt;¡Inténtalo!&lt;/h3&gt;
+
+  &lt;p&gt;Abre un editor de texto (p.e. Bloc de Notas, TextEdit, etc.) y pega el código HTML anterior. Guárdalo como index.html en el escritorio. Arrástralo desde el escritorio al navegador (Internet Explorer, Chrome, Firefox, etc.) para abrirlo.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;ms-recursos&quot;&gt;Más recursos:&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Escucha a David Malan explicar cómo funciona Internet en &lt;a href=&quot;http://cs50.tv/2012/fall/shorts/http/http-720p.mp4&quot; target=&quot;_blank&quot;&gt;este corto video de 3 minutos&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://dash.generalassemb.ly/&quot; target=&quot;_blank&quot;&gt;Dash - General Assembly&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.codecademy.com/tracks/web&quot; target=&quot;_blank&quot;&gt;HTML - Codecademy&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.w3schools.com/html/default.asp&quot; target=&quot;_blank&quot;&gt;HTML Tutorial - W3Schools&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://eloquentjavascript.net/17_http.html&quot; target=&quot;_blank&quot;&gt;HTTP - Eloquent Javascript&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Aprende a usar el Developer Tools de tu navegador en &lt;a href=&quot;https://www.youtube.com/watch?v=z1TkfcC53G0&quot; target=&quot;_blank&quot;&gt;este video de 10 minutos&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Si tienes un verdadero interés por la programación y quieres aprender a diseñar e implementar tus propias aplicaciones Web no dudes en &lt;a href=&quot;/apply&quot;&gt;aplicar a Make it Real&lt;/a&gt;!&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <id>http://makeitreal.camp/blog/2014/10/02/conceptos-basicos-de-programacion</id>
+    <link type="text/html" rel="alternate" href="http://makeitreal.camp/blog/2014/10/02/conceptos-basicos-de-programacion/"/>
+    <title>Conceptos básicos de programación</title>
+    <updated>2014-10-02T17:40:58+00:00</updated>
+    <author>
+      <name>Germán Escobar</name>
+    </author>
+    <content type="html">&lt;p&gt;Todos los lenguajes de programación comparten algunos elementos básicos que funcionan y se usan de forma diferente en cada lenguaje, pero que cumplen el mismo objetivo. Esos elementos son:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Tipos de datos&lt;/li&gt;
+  &lt;li&gt;Variables&lt;/li&gt;
+  &lt;li&gt;Control de flujo&lt;/li&gt;
+  &lt;li&gt;Ciclos&lt;/li&gt;
+  &lt;li&gt;Estructuras de datos&lt;/li&gt;
+  &lt;li&gt;Funciones&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Acepto que entender cómo funcionan estos elementos no es diversión pura, pero es la base de la programación. Recuerda que la programación no es más que una herramienta, un medio para lograr algún fin: ¿escribir un juego? ¿hacer una aplicación web? ¿una aplicación móvil?.&lt;/p&gt;
+
+&lt;h2 id=&quot;tipos-de-datos&quot;&gt;Tipos de datos&lt;/h2&gt;
+
+&lt;p&gt;Algunos lenguajes de programación tienen más tipos de datos que otros, pero, en general, todos incluyen al menos los siguientes: &lt;strong&gt;caracteres&lt;/strong&gt; (char), &lt;strong&gt;cadenas de caracteres&lt;/strong&gt; (string), &lt;strong&gt;enteros&lt;/strong&gt; (integer), &lt;strong&gt;decimales&lt;/strong&gt; (decimal, float), y &lt;strong&gt;booleanos&lt;/strong&gt; (true y false). Por ejemplo:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;En JavaScript:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;javascript&quot;&gt;“Hola Mundo”
+34
+23.45
+false&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;En Ruby:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;“Hola Mundo”
+34
+23.45
+false&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;variables&quot;&gt;Variables&lt;/h2&gt;
+
+&lt;p&gt;Las variables nos permiten almacenar información temporalmente. Por ejemplo, podemos almacenar la cadena “Hola Mundo” en una variable.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;En JavaScript:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;javascript&quot;&gt;var miPrimeraVariable = “Hola Mundo”&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;En Ruby:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;mi_primera_variable = “Hola Mundo”&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Acá se empiezan a notar algunas diferencias entre los lenguajes. En &lt;strong&gt;JavaScript&lt;/strong&gt;, una variable se define empezando con la palabra &lt;code&gt;var&lt;/code&gt; (es posible omitirla pero eso se considera una mala práctica). En &lt;strong&gt;Ruby&lt;/strong&gt; se empieza con el nombre de la variable.&lt;/p&gt;
+
+&lt;p&gt;En &lt;strong&gt;JavaScript&lt;/strong&gt;, si el nombre de una variable se compone de varias palabras, las palabras inician con mayúscula excepto la primera (a eso se le conoce como CamelCase … porqueTieneFormaDeCamello). En &lt;strong&gt;Ruby&lt;/strong&gt; las palabras se separan con underscore (a esto se le conoce como snake_case … porque_parece_una_culebra). (Esto es solo una notación y no hay nada que impida utilizar snake_case en &lt;strong&gt;JavaScript&lt;/strong&gt;, o CamelCase en &lt;strong&gt;Ruby&lt;/strong&gt;. En los tutorials más básicos de cada lenguaje generalmente le dicen a uno qué notación utilizar).&lt;/p&gt;
+
+&lt;h2 id=&quot;un-mecanismo-para-tomar-de-decisiones&quot;&gt;Un mecanismo para tomar de decisiones&lt;/h2&gt;
+
+&lt;p&gt;Un elemento muy importante en todo lenguaje de programación es cómo tomar una decisión según la información que se tenga en las variables. Por ejemplo:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;En JavaScript:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;javascript&quot;&gt;var puntos = 20;
+if (puntos &amp;gt; 15) {
+  console.log(&quot;Felicitaciones, tienes más de 15 puntos!&quot;);
+} else {
+  console.log(&quot;Muy Regular, tienes menos de 15 puntos&quot;);
+}&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;En Ruby:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;puntos = 5
+if puntos &amp;gt; 15
+  puts &quot;Felicitaciones, tienes más de 15 puntos!&quot;
+else
+  puts &quot;Muy Regular, tienes menos de 15 puntos&quot;
+end&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;De nuevo, la sintaxis cambia de lenguaje a lenguaje, pero el principio es el mismo.&lt;/p&gt;
+
+&lt;p&gt;A esto se le llama &lt;strong&gt;control de flujo&lt;/strong&gt; porque cuando el programa está corriendo, los &lt;code&gt;if&lt;/code&gt; deciden qué código se ejecuta.&lt;/p&gt;
+
+&lt;h2 id=&quot;un-mecanismo-para-iterar-ciclos&quot;&gt;Un mecanismo para iterar (ciclos)&lt;/h2&gt;
+
+&lt;p&gt;Por ejemplo, cuando queremos imprimir los números de 0 hasta 9.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;En JavaScript:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;javascript&quot;&gt;for (var i = 0; i &amp;lt;  10; i++) {
+  console.log(i);
+}&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;En Ruby:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;9.times do |i|
+  puts i
+end&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;estructuras-de-datos&quot;&gt;Estructuras de datos&lt;/h2&gt;
+
+&lt;p&gt;Si vieron programación en la universidad el título los puede asustar. Pero las estructuras de datos existen porque programar únicamente con los tipos básicos (char, integer, boolean, etc) sería muy difícil. A veces necesitamos almacenar colecciones de datos e información más estructurada.&lt;/p&gt;
+
+&lt;p&gt;Los arreglos son los más conocidos, nos permiten almacenar varios datos &lt;em&gt;en una sola variable&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;En Javascript:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;javascript&quot;&gt;var arreglo = [1, 2, 3, 4, 5]
+console.log(arreglo[2]); // 3 - el primer elemento está en la posición 0&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;En Ruby:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;arreglo = [1, 2, 3, 4, 5]
+puts arreglo[2] # 3 - el primer elemento está en la posición 0&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;A veces se necesita guardar información más estructurada. Por ejemplo, los datos de una persona.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;En JavaScript:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;javascript&quot;&gt;var german = {
+  name: “German Escobar”,
+  gender: ‘male’,
+  age: 32
+};
+
+console.log(german.gender); // male&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;En Ruby:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;class Person
+  attr_accessor :name, :gender, :age
+end
+
+german = Person.new
+german.name = “German Escobar”
+german.gender = “male”
+german.age = 32
+
+puts german.gender # male&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;funciones&quot;&gt;Funciones&lt;/h2&gt;
+
+&lt;p&gt;Las funciones, también llamadas procedimientos o métodos, encapsulan algunas instrucciones y se pueden llamar utilizando el nombre de la función.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;En JavaScript:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;javascript&quot;&gt;function rockear(lenguaje) {
+  console.log(lenguaje + &quot; rocks!&quot;);
+}
+
+rockear(&quot;JavaScript&quot;);&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;En Ruby:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;def rockear(lenguaje)
+  puts lenguaje + &quot; rocks!&quot;
+end
+
+rockear(&quot;Ruby&quot;)&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Existen muchos más elementos de cada lenguaje de programación, pero con estos podemos empezar a leer código y jugar con el lenguaje.&lt;/p&gt;
+
+&lt;h2 id=&quot;preguntas-bsicas-sobre-un-lenguaje-de-programacin&quot;&gt;Preguntas básicas sobre un lenguaje de programación&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;¿Qué tipos de datos existen?&lt;/li&gt;
+  &lt;li&gt;¿Cómo se define y se asigna un valor a una variable?&lt;/li&gt;
+  &lt;li&gt;¿Cómo se itera sobre un rango de números?&lt;/li&gt;
+  &lt;li&gt;¿Cómo se define un arreglo?&lt;/li&gt;
+  &lt;li&gt;¿Cómo se itera sobre un arreglo?&lt;/li&gt;
+  &lt;li&gt;¿Cómo se define una función?&lt;/li&gt;
+  &lt;li&gt;¿Cómo se comenta el código?&lt;/li&gt;
+  &lt;li&gt;¿En qué se usa principalmente el lenguaje?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;ms-recursos&quot;&gt;Más recursos&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Nuestros amigos de &lt;a href=&quot;http://mejorando.la/&quot; target=&quot;_blank&quot;&gt;mejorando.la&lt;/a&gt; han creado un &lt;a href=&quot;https://cursos.mejorando.la/programacion-basica/&quot; target=&quot;_blank&quot;&gt;curso gratis&lt;/a&gt; para aprender programación básica.&lt;/li&gt;
+  &lt;li&gt;En Codecademy existe un curso de &lt;a href=&quot;http://www.codecademy.com/en/tracks/javascript&quot; target=&quot;_blank&quot;&gt;JavaScript&lt;/a&gt; y otro de &lt;a href=&quot;http://www.codecademy.com/tracks/ruby&quot; target=&quot;_blank&quot;&gt;Ruby&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Treehouse también tiene cursos básicos de programación. Uno de &lt;a href=&quot;http://teamtreehouse.com/library/introduction-to-programming&quot; target=&quot;_blank&quot;&gt;JavaScript&lt;/a&gt; y el otro de &lt;a href=&quot;http://teamtreehouse.com/library/ruby-foundations&quot; target=&quot;_blank&quot;&gt;Ruby&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Si tienes un verdadero interés por la programación y quieres aprender a diseñar e implementar tus propias aplicaciones Web no dudes en &lt;a href=&quot;/apply&quot;&gt;aplicar a Make it Real&lt;/a&gt;!&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <id>http://makeitreal.camp/blog/2014/09/22/aprendiendo-a-programar</id>
+    <link type="text/html" rel="alternate" href="http://makeitreal.camp/blog/2014/09/22/aprendiendo-a-programar/"/>
+    <title>Aprendiendo a Programar</title>
+    <updated>2014-09-22T17:40:58+00:00</updated>
+    <author>
+      <name>Germán Escobar</name>
+    </author>
+    <content type="html">&lt;p&gt;Aprender a programar es difícil. &lt;strong&gt;La mayoría de la programación no requiere ser bueno en matemáticas, ni tener un cerebro especial; requiere mucha práctica&lt;/strong&gt;. Aprender un nuevo lenguaje de programación es parecido a aprender un nuevo instrumento, o un nuevo idioma. Existen diferentes niveles de destreza. Pero así como no es necesario estudiar literatura para aprender un idioma, ni música para aprender un instrumento, no es necesario estudiar ingeniería de sistemas o ciencias de la computación para aprender a programar.&lt;/p&gt;
+
+&lt;blockquote&gt;“To learn and to grow, we must consciously tune into the opportunities that are around us, as well as the barriers that may be unnecessarily holding us back”&lt;br /&gt;&lt;br /&gt;
+
+Carol Dweck, &lt;a href=&quot;http://www.amazon.com/Mindset-How-Fulfil-Your-Potential-ebook/dp/B005RZB65Q/ref=tmm_kin_title_0?ie=UTF8&amp;amp;qid=1411397526&amp;amp;sr=1-1&quot; target=&quot;blank&quot;&gt;Mindset&lt;/a&gt;.&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;Los lenguajes de programación, así como los idiomas y la música, son un medio, no un fin&lt;/strong&gt;. Construir una aplicación Web, escribir un cuento, o componer una canción son fines. Sí, es posible aprender un idioma solo por el hecho de aprender, pero no es hasta que utilizamos el idioma para defendernos en una conversación que el aprendizaje ocurre. &lt;/p&gt;
+
+&lt;p&gt;Lo mismo ocurre con la programación. &lt;strong&gt;Es posible aprender la sintaxis de un nuevo lenguaje de programación, y la estructura de un programa, pero no es hasta que intentamos hacer nuestra primera aplicación que el aprendizaje ocurre&lt;/strong&gt;. Seleccionar un proyecto para construir es clave a la hora de aprender a programar. Recuerda siempre eso. La programación es una herramienta, y debemos tratarla como tal, ya sea para organizar información (p.e. &lt;a href=&quot;https://evernote.com/&quot;&gt;Evernote&lt;/a&gt; o &lt;a href=&quot;https://www.dropbox.com/&quot;&gt;Dropbox&lt;/a&gt;), mejorar la comunicación (p.e. &lt;a href=&quot;http://twitter.com&quot;&gt;Twitter&lt;/a&gt;, &lt;a href=&quot;http://uber.com/&quot;&gt;Uber&lt;/a&gt;, &lt;a href=&quot;http://basecamp.com/&quot;&gt;Basecamp&lt;/a&gt;), o automatizar tareas repetitivas.&lt;/p&gt;
+
+&lt;h2 id=&quot;cmo-mejorar-el-aprendizaje&quot;&gt;¿Cómo mejorar el aprendizaje?&lt;/h2&gt;
+
+&lt;p&gt;Para aprender una nueva habilidad, se necesitan tres elementos básicos: mentalidad de crecimiento, practica deliberada y redefinir el fracaso.&lt;/p&gt;
+
+&lt;h3 id=&quot;mentalidad-de-crecimiento&quot;&gt;Mentalidad de crecimiento&lt;/h3&gt;
+
+&lt;p&gt;La mayor barrera para adquirir un nuevo conocimiento no es intelectual, es emocional. Creer que podemos aprender algo nuevo es una actitud, una mentalidad. &lt;/p&gt;
+
+&lt;p&gt;Carol Dweck, en su libro &lt;a href=&quot;http://www.amazon.com/Mindset-How-Fulfil-Your-Potential-ebook/dp/B005RZB65Q/ref=tmm_kin_title_0?ie=UTF8&amp;amp;qid=1411397526&amp;amp;sr=1-1&quot;&gt;Mindset&lt;/a&gt;, argumenta que algunas personas creen que su inteligencia es fija, y que sin importar lo que hagan, nunca serán más inteligentes. Otras, por el contrario, ven la inteligencia como algo maleable y que puede ser desarrollada. Lo interesante es que esas dos mentalidades conducen a comportamientos y resultados diferentes.&lt;/p&gt;
+
+&lt;p&gt;Aprender una nueva habilidad puede ser bastante frustrante. Entender que esa frustración no va a ser permanente y que con más práctica eventualmente lo vamos a lograr (mentalidad de crecimiento), es clave para el aprendizaje.&lt;/p&gt;
+
+&lt;h3 id=&quot;prctica-deliberada&quot;&gt;Práctica deliberada&lt;/h3&gt;
+
+&lt;p&gt;Para aprender una nueva habilidad, no basta con practicar. Es necesario practicar con un propósito. Los grandes músicos no intentan simplemente practicar el mayor número de horas al día. Intentan practicar esos 20 segundos que más se les están dificultando.&lt;/p&gt;
+
+&lt;p&gt;La práctica deliberada es desgastante. Muchos afirman que no es posible hacerla más de unas horas al día.&lt;/p&gt;
+
+&lt;p&gt;En la programación, la práctica deliberada ocurre cuando estamos intentando hacer algo con un nuevo lenguaje de programación, librería, o API que no entendemos completamente. Es ese momento en el que uno se enfrenta con un editor de texto en blanco o una consola parpadeante e intenta replicar algún tutorial que uno hizo previamente, o empieza un nuevo proyecto similar.&lt;/p&gt;
+
+&lt;h3 id=&quot;redefinir-el-fracaso&quot;&gt;Redefinir el fracaso&lt;/h3&gt;
+
+&lt;p&gt;Desde el colegion nos han enseñado a evitar el fracaso. Las malas notas son eso, malas notas. Pero ¿qué tal si redefinimos el fracaso y lo convertimos en iteraciones? De esa forma podemos cambiar la connotación negativa de fracaso y convertirla en algo positivo, en algo que nos indica que lo estamos intentando.&lt;/p&gt;
+
+&lt;p&gt;Es por eso que en &lt;a href=&quot;http://makeitreal.camp&quot;&gt;Make it Real&lt;/a&gt; no medimos a los estudiantes por cuántos retos hacen por día. Los medimos por el número de intentos, sin importar si funcionan o no. A los intentos que no funcionan no los llamamos fracasos, los llamamos iteraciones. Recuerden: &lt;strong&gt;no están fracasando, están iterando&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;bienvenidos-a-esta-nueva-experiencia&quot;&gt;Bienvenidos a esta nueva experiencia&lt;/h2&gt;
+
+&lt;p&gt;En &lt;a href=&quot;http://makeitrea.camp&quot;&gt;Make it Real&lt;/a&gt; no solo queremos enseñarles a programar. Queremos ayudarles a superar &lt;a href=&quot;https://medium.com/@aliciatweet/overcoming-impostor-syndrome-bdae04e46ec5&quot;&gt;el síndrome del impostor&lt;/a&gt; que la mayoría de programadores hemos sufrido en algún momento de nuestras vidas. Queremos crearles esa mentalidad de crecimiento para que sigan aprendiendo nuevas habilidades por el resto de sus vidas.&lt;/p&gt;
+
+&lt;p&gt;Hemos diseñado todo el programa para hacer practica deliberada varias horas al día. Se van a sentir frustrados. Va a ser desgastante. Pero les aseguro que si logran superar esa frustración, el resultado valdrá la pena.&lt;/p&gt;
+
+&lt;p&gt;¡Hagamos esto realidad!&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Si tienes un verdadero interés por la programación y quieres aprender a diseñar e implementar tus propias aplicaciones Web no dudes en &lt;a href=&quot;/apply&quot;&gt;aplicar a Make it Real&lt;/a&gt;!&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <id>http://makeitreal.camp/blog/2014/08/29/disenando-un-producto-viable-minimo</id>
+    <link type="text/html" rel="alternate" href="http://makeitreal.camp/blog/2014/08/29/disenando-un-producto-viable-minimo/"/>
+    <title>Diseñando un Producto Viable Mínimo</title>
+    <updated>2014-08-29T17:40:58+00:00</updated>
+    <author>
+      <name>Germán Escobar</name>
+    </author>
+    <content type="html">&lt;p&gt;En los últimos días hemos estado trabajando sin descanso en &lt;strong&gt;Challenges&lt;/strong&gt;, una aplicación para administrar los retos de programación que los alumnos de &lt;strong&gt;Make it Real&lt;/strong&gt; tendrán que completar durante las 12 semanas del Bootcamp. En este post vamos a utilizar &lt;strong&gt;Challenges&lt;/strong&gt; como ejemplo para explicar el proceso de diseño de un &lt;a href=&quot;http://es.wikipedia.org/wiki/Producto_viable_m%C3%ADnimo&quot;&gt;producto viable mínimo (PVM)&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/challenges.png&quot; alt=&quot;Challenges&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Challenges&lt;/strong&gt; es una aplicación que se puede volver tan compleja como queramos (leaderboards, badges, tagging, integración a Github, manejo de archivos, y peer reviews, son solo algunas de las ideas que se me ocurren ahora) ¿Por dónde empezar?&lt;/p&gt;
+
+&lt;h2 id=&quot;el-primer-paso&quot;&gt;El primer paso&lt;/h2&gt;
+
+&lt;p&gt;Podríamos durar meses haciendo una especificación detallada de todas las funcionalidades que queremos implementar antes de escribir nuestra primera línea de código; es un error que cometen muchas empresas cuando están diseñando sus aplicaciones.&lt;/p&gt;
+
+&lt;p&gt;Una mejor estrategia es concentrarnos únicamente en la &lt;strong&gt;esencia de la aplicación&lt;/strong&gt;, en aquellas funcionalidades críticas sin las que no existiría aplicación, en el producto viable mínimo. Después podemos agregar más funcionalidades y mejorar la implementación actual. Lo importante es entender que &lt;strong&gt;una aplicación Web es un sistema en constante evolución que nunca va a estar terminado&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Pero eso no quiere decir que debamos empezar a escribir nuestro código inmediatamente. Necesitamos al menos identificar quiénes van a utilizar nuestro producto (actores), qué puede hacer cada actor en nuestra aplicación (casos de uso), qué información necesitamos almacenar (diagrama de base de datos), y cómo se va a ver nuestra aplicación (wireframes).&lt;/p&gt;
+
+&lt;h2 id=&quot;actores-y-casos-de-uso&quot;&gt;Actores y casos de uso&lt;/h2&gt;
+
+&lt;p&gt;Para &lt;strong&gt;Challenges&lt;/strong&gt; identificamos dos actores: alumnos y administradores. La siguiente imagen muestra el diagrama de casos de uso:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/makeitchallenges-use-cases.jpg&quot; alt=&quot;Actores y Casos de Uso&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Sí, existen herramientas para hacer estos diagramas, pero a veces lo único que se tiene a la mano es una servilleta y un bolígrafo.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Estos ocho casos de uso son los más importantes. Podríamos agregar más si quisiéramos pero con estos ocho podemos crear un producto viable mínimo. Los casos de uso más críticos son: &lt;strong&gt;crear reto&lt;/strong&gt; y &lt;strong&gt;solucionar reto&lt;/strong&gt;. Fueron los primeros que implementamos y en los que más nos enfocamos!&lt;/p&gt;
+
+&lt;p&gt;Hay varias estrategias para detallar los casos de uso. Lo mínimo es una descripción de los pasos que debe seguir el usuario para completar la acción, los datos que debe ingresar, y/o la información que va a recibir/visualizar.&lt;/p&gt;
+
+&lt;h2 id=&quot;wireframes&quot;&gt;Wireframes&lt;/h2&gt;
+
+&lt;p&gt;Los wireframes son un boceto de la interfaz gráfica de nuestra aplicación y nos dan una idea de los diferentes elementos que necesitamos diseñar.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/makeitchallenges-wireframes.jpg&quot; alt=&quot;Wireframes&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Lo más importante es no enfocarse en los detalles, solo en la funcionalidad. Por eso es preferible hacer cada pantalla de máximo 5cm x 5cm. &lt;/p&gt;
+
+&lt;h2 id=&quot;la-base-de-datos&quot;&gt;La base de datos&lt;/h2&gt;
+
+&lt;p&gt;A partir de los casos de uso y wireframes nos damos una idea de la información que necesitamos almacenar. En nuestro caso son los &lt;strong&gt;usuarios&lt;/strong&gt;, los &lt;strong&gt;retos&lt;/strong&gt;, y las &lt;strong&gt;soluciones&lt;/strong&gt;. La siguiente figura muestra el diagrama de base de datos.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/makeitchallenges-database.jpg&quot; alt=&quot;Diagrama de Base de Datos&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Cada caja representa una tabla y sus columnas. Las líneas representan relaciones entre las tablas. En este caso, los &lt;strong&gt;retos&lt;/strong&gt; y los &lt;strong&gt;usuarios&lt;/strong&gt; están relacionados a través de las &lt;strong&gt;soluciones&lt;/strong&gt;. También es necesario definir el tipo de datos de cada columna y una descripción más detallada de ser necesario.&lt;/p&gt;
+
+&lt;p&gt;¡Eso es todo! La implementación del PVM nos tomó aproximadamente 12 horas. La mayor parte de ese tiempo fue ajustando el editor embebido y encontrando la mejor forma de validar los retos ;) Desde entonces hemos estado trabajando en mejorar el diseño, la experiencia, y subiendo los retos al sistema. Pero en un futuro post publicaremos un video de cómo implementar este PVM.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;El proceso de diseño de una aplicación Web puede ser tan básico e informal como lo hicimos acá, o tan sofisticado y formal como cada empresa lo considere necesario. Lo importante es concentrarse en la esencia de la aplicación y especificar lo mínimo necesario para la implementación, independientemente de quién vaya a escribir el código.&lt;/p&gt;
+
+&lt;p&gt;Si tienes un verdadero interés por la programación y quieres aprender a diseñar e implementar tus propias aplicaciones Web no dudes en &lt;a href=&quot;/apply&quot;&gt;aplicar a Make it Real&lt;/a&gt;!&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <id>http://makeitreal.camp/blog/2014/08/12/entrevista-a-sebastian-sogamoso</id>
+    <link type="text/html" rel="alternate" href="http://makeitreal.camp/blog/2014/08/12/entrevista-a-sebastian-sogamoso/"/>
+    <title>Entrevista a Sebastián Sogamoso</title>
+    <updated>2014-08-12T17:40:58+00:00</updated>
+    <author>
+      <name>Germán Escobar</name>
+    </author>
+    <content type="html">&lt;p&gt;Tuvimos la oportunidad de hacerle algunas preguntas a Sebastián Sogamoso para que nos contara un poco sobre su experiencia como desarrollador trabajando remotamente para una empresa en Estados Unidos:&lt;/p&gt;
+
+&lt;div style=&quot;text-align: center; margin: 30px 0;&quot;&gt;
+	&lt;img src=&quot;/images/sebastian-sogamoso.jpg&quot; alt=&quot;Sebastián Sogamoso&quot; class=&quot;img-circle&quot; /&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;cuntanos-un-poco-quin-eres-y-a-qu-te-dedicas&quot;&gt;¿Cuéntanos un poco quién eres y a qué te dedicas?&lt;/h3&gt;
+
+&lt;p&gt;Me llamo Sebastián Sogamoso, soy ingeniero de software y trabajo de manera remota para &lt;a href=&quot;http://woboinc.com/&quot;&gt;Wobo Inc&lt;/a&gt; una empresa con base en San Francisco, California.&lt;/p&gt;
+
+&lt;h3 id=&quot;cundo-y-cmo-aprendiste-a-programar&quot;&gt;¿Cuándo y cómo aprendiste a programar?&lt;/h3&gt;
+
+&lt;p&gt;Me entusiasme con la programación escribiendo algoritmos básicos cuando estaba en el colegio, desafortunadamente en la universidad perdí el interés por programar debido a la falta de retos interesantes, lo poco prácticos que eran los cursos, los lenguajes de programación que usábamos y algunos malos profesores. Así que no diría que realmente aprendí a programar hasta que tuve la fortuna de escuchar sobre Ruby del cual que me enamoré desde el primer día, desde eso han pasado varios años y sigo aprendiendo todos los días.&lt;/p&gt;
+
+&lt;h3 id=&quot;con-qu-lenguajes-tecnologas-y-herramientas-trabajas-diariamente&quot;&gt;¿Con qué lenguajes, tecnologías y herramientas trabajas diariamente?&lt;/h3&gt;
+
+&lt;p&gt;Más que todo desarrollo en Ruby, usando Rails para desarrollar aplicaciones web en el servidor y en algunos casos uso Javascript en el lado del cliente. Mi editor de texto es VIM y uso Git para el control de versiones. Desarrollo usando OS-X, pero despliego todas las aplicaciones en alguna distribución de Linux.&lt;/p&gt;
+
+&lt;h3 id=&quot;cules-crees-que-son-las-ventajas-de-tu-trabajo&quot;&gt;¿Cuáles crees que son las ventajas de tu trabajo?&lt;/h3&gt;
+
+&lt;p&gt;Las ventajas de tener un trabajo como el mío es que puedo trabajar resolviendo retos interesantes, aprender nuevas tecnologías y hacer parte de un equipo con excelentes desarrolladores de diferentes partes del mundo. Además como trabajo de manera remota tengo un horario bastante flexible sin mencionar que puedo trabajar desde cualquier parte del mundo lo cual me ha permitido hacer bastantes viajes sin tener que interrumpir mi trabajo.&lt;/p&gt;
+
+&lt;p&gt;Disfruto tanto mi trabajo desarrollando software que deje de tenerle pereza a los lunes, y en mis tiempos libres me gusta aprender lenguajes nuevos y contribuir a proyectos open source.&lt;/p&gt;
+
+&lt;h3 id=&quot;qu-consejo-le-daras-a-las-personas-que-estn-aprendiendo-a-programar-y-quieren-encontrar-un-empleo-como-el-tuyo&quot;&gt;¿Qué consejo le darías a las personas que están aprendiendo a programar y quieren encontrar un empleo como el tuyo?&lt;/h3&gt;
+
+&lt;p&gt;Que empiecen a escribir código hoy mismo, ser desarrollador de software requiere de practica, así que entre más rápido empiecen a practicar mejor. No tengan miedo a equivocarse y mucho menos a pedir ayuda. Publiquen su código, compartanlo con todas las personas que puedan y pídanles retroalimentación&lt;/p&gt;
+
+&lt;p&gt;Lean código escrito por otras personas, pueden aprender bastante de esa forma. Hay miles de proyectos open source de los que pueden aprender, la mayoría tienen su código en &lt;a href=&quot;https://github.com/&quot;&gt;Github&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;crees-que-realmente-existe-un-dficit-de-programadores-en-el-mundo&quot;&gt;¿Crees que realmente existe un déficit de programadores en el mundo?&lt;/h3&gt;
+
+&lt;p&gt;No es algo que yo crea, es un hecho. Recientemente en un articulo en la &lt;a href=&quot;http://www.dinero.com/pais/articulo/mercado-laboral-ingenieros-sistemas-colombia/199380&quot;&gt;revista Dinero&lt;/a&gt; el ministro de las TIC explicó como en Colombia existe un déficit de ingenieros. Para 2018, se espera que las 1.800 empresas de desarrollo de software que existen en Colombia se dupliquen y que los 39.000 empleos relacionados con las TIC se conviertan en 351.000.&lt;/p&gt;
+
+&lt;h3 id=&quot;si-alguien-que-est-interesado-en-aprender-a-programar-quiere-hacerte-alguna-pregunta-como-te-puede-contactar&quot;&gt;¿Si alguien que está interesado en aprender a programar quiere hacerte alguna pregunta como te puede contactar?&lt;/h3&gt;
+
+&lt;p&gt;Me pueden encontrar en Twitter como &lt;a href=&quot;http://twitter.com/sebasoga&quot;&gt;@sebasoga&lt;/a&gt;, acá estoy para ayudar.&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <id>http://makeitreal.camp/blog/2014/08/08/es-make-it-real-costoso</id>
+    <link type="text/html" rel="alternate" href="http://makeitreal.camp/blog/2014/08/08/es-make-it-real-costoso/"/>
+    <title>¿Es Make it Real costoso?</title>
+    <updated>2014-08-08T17:40:58+00:00</updated>
+    <author>
+      <name>Germán Escobar</name>
+    </author>
+    <content type="html">&lt;p&gt;Make it Real no es un curso tradicional de programación, es una alternativa/complemento al sistema de educación formal (pregrado, posgrado, diplomados, etc). Son 12 semanas -tiempo completo- aprendiendo, practicando, construyendo. Algunos nos han expresado que el programa les parece costoso. Este es mi intento de explicar por qué Make it Real cuesta lo que cuesta.&lt;/p&gt;
+
+&lt;h2 id=&quot;un-bootcamp-personalizado&quot;&gt;Un bootcamp personalizado&lt;/h2&gt;
+
+&lt;p&gt;En Make it Real queremos entrenar a los desarrolladores que nosotros mismos contrataríamos. Es una experiencia completamente personalizada, con acceso a los mejores recursos online y mentores con bastante experiencia en desarrollo Web.&lt;/p&gt;
+
+&lt;p&gt;Utilizamos una metodología llamada Flipped Classroom, o Clase Invertida. En lugar de la clase tradicional en donde el profesor les explica el mismo tema a todos los estudiantes, la Clase Invertida se apoya de recursos online que los alumnos pueden estudiar en sus casas. El tiempo de clase se utiliza para practicar. Es por eso que en Make it Real hacemos uso de los mejores recursos online para aprender a programar. &lt;strong&gt;En total recibirás más de $300 dólares en acceso a los recursos que utilizaremos durante el bootcamp&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Los mentores de Make it Real son desarrolladores Web Senior que han trabajado en la industria pero les apasiona el tema de la educación. Ellos van a guiar tu aprendizaje, solucionarán tus dudas, expandirán los temas que más se te dificulten y trabajarán contigo para completar el proyecto final. Cada mentor trabajará con un máximo de 8 a 9 alumnos para mantener el nivel de personalización. &lt;strong&gt;Los mentores son lo más valioso del programa y los tratamos como tal. Pero conseguir y retener ese talento es costoso, especialmente ahora que la demanda por desarrolladores Web es tan alta&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;la-oportunidad&quot;&gt;La oportunidad&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Un programador en Colombia, con los conocimientos que va a aprender en Make it Real, puede salir a ganar entre 3 y 4 millones de pesos mensuales&lt;/strong&gt;. La demanda por programadores sigue creciendo y las universidades no se han logrado adaptar a las necesidades del mercado. El actual ministro de las TIC en Colombia, Diego Molano Vega, ha expresado la necesidad de programadores en un artículo de la revista Dinero titulado &lt;a href=&quot;http://www.dinero.com/pais/articulo/mercado-laboral-ingenieros-sistemas-colombia/199380&quot;&gt;“Industria de las TIC necesita más ingenieros”&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;El problema no es exclusivo de Colombia. En Estados Unidos existen bootcamps similares a Make it Real, entre ellos &lt;a href=&quot;http://www.starterleague.com/&quot;&gt;The Starter League&lt;/a&gt;, &lt;a href=&quot;http://www.hackreactor.com/&quot;&gt;HackReactor&lt;/a&gt;, y &lt;a href=&quot;http://devbootcamp.com/&quot;&gt;Dev Bootcamp&lt;/a&gt;. Veamos el ejemplo de &lt;a href=&quot;http://www.hackreactor.com/&quot;&gt;HackReactor&lt;/a&gt;, también de 12 semanas tiempo completo. El 99% de los alumnos de HackReactor consiguen empleo en los dos siguientes meses después de terminar el programa con un salario promedio de $105,000 dólares al año. Eso son aproximadamente 15 millones de pesos al mes! Sin embargo el costo del programa en HackReactor es de $17,700 dólares, más de 30 millones de pesos.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Debido a los altos salarios, las empresas extranjeras están buscando talento en otros países y Colombia tiene todo el potencial para crearlo&lt;/strong&gt;. Medellín ha sido seleccionada como la ciudad más innovadora y muchas empresas extranjeras han puesto los ojos en la ciudad. Pero las que han llegado no han encontrado el talento que necesitan. Es por eso que hemos creado alianzas con varias empresas que están dispuestas a evaluar y contratar los estudiantes de Make it Real!&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusin&quot;&gt;Conclusión&lt;/h2&gt;
+
+&lt;p&gt;Esta es la oportunidad. Este es el momento. Estamos creando un programa de calidad para entrenar a los desarrolladores que las empresas de hoy necesitan.&lt;/p&gt;
+
+&lt;p&gt;Entendemos que no todos tienen la capacidad económica para cubrir la inversión. Pero nuestra recomendación es que si tienes un interés real por la programación y estás dispuesto a trabajar muy duro por 12 semanas, &lt;a href=&quot;/apply/&quot;&gt;aplica a Make it Real&lt;/a&gt; y trabajemos de la mano para encontrar alternativas de financiación. &lt;strong&gt;¡No dejemos que la plata no sea un impedimento para hacer este sueño realidad!&lt;/strong&gt;&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <id>http://makeitreal.camp/blog/2014/08/03/que-es-un-bootcamp-inmersivo-de-programacion</id>
+    <link type="text/html" rel="alternate" href="http://makeitreal.camp/blog/2014/08/03/que-es-un-bootcamp-inmersivo-de-programacion/"/>
+    <title>¿Qué es un Bootcamp inmersivo de programación?</title>
+    <updated>2014-08-03T17:40:58+00:00</updated>
+    <author>
+      <name>Germán Escobar</name>
+    </author>
+    <content type="html">&lt;p&gt;El mundo está cambiando a una velocidad increíble y el sistema de educación formal no ha logrado mantener el ritmo. Los Bootcamps inmersivos de programación nacen como una alternativa educativa para aquellos que quieren aprender a programar, ya sea para encontrar un mejor empleo o para desarrollar un producto con el objetivo de crear empresa.&lt;/p&gt;
+
+&lt;p&gt;Los Bootcamps inmersivos surgieron hace relativamente poco -aproximádamente 3 o 4 años- en Silicon Valley para suplir la creciente demanda de programadores Web calificados, y como una alternativa/complemento al sistema de educación formal (pregrado, posgrado, diplomados, etc.). &lt;strong&gt;Tienen una duración promedio de 9 a 12 semanas, con una intensidad de tiempo completo (lunes a viernes de 8:00 a.m. a 6:00 p.m. generalmente)&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Según &lt;a href=&quot;https://www.coursereport.com/resources/course-report-bootcamp-market-size-study&quot;&gt;un estudio&lt;/a&gt; sobre el tamaño del mercado de los Bootcamps inmersivos, se estima que en 2014 se graduarán aproximadamente 6,000 estudiantes en Estados Unidos, una cifra bastante alta si tenemos en cuenta que en 2013, 48,000 estudiantes se graduaron de Ciencias de la Computación en ese país. La duración promedio de estos programas es de 10.4 semanas con un precio promedio de 9,900 dólares. &lt;/p&gt;
+
+&lt;p&gt;Algunos de los Bootcamps más reconocidos en Estados Unidos son &lt;a href=&quot;http://www.starterleague.com/&quot;&gt;The Starter League&lt;/a&gt;, &lt;a href=&quot;http://www.hackreactor.com/&quot;&gt;HackReactor&lt;/a&gt;, y &lt;a href=&quot;http://devbootcamp.com/&quot;&gt;Dev Bootcamp&lt;/a&gt;. En &lt;a href=&quot;http://www.hackreactor.com/&quot;&gt;HackReactor&lt;/a&gt;, por ejemplo, el 99% de los estudiantes consiguen empleo en los primeros meses después de haber terminado el Bootcamp, con un salario promedio anual de 105,000 dólares al año!&lt;/p&gt;
+
+&lt;h2 id=&quot;para-quin&quot;&gt;¿Para quién?&lt;/h2&gt;
+
+&lt;p&gt;Un Bootcamp inmersivo de programación es ideal para aquellos que  quieren aprender a programar pero sienten que la universidad no está aprovechando todo su potencial. También para aquellos que terminaron la universidad y quieren preparase en las habilidades que el mundo de hoy necesita, ya sea para encontrar un empleo o emprender. Por último, es ideal para aquellos que quieren cambiar de carrera; &lt;strong&gt;las mejores oportunidades están en la intersección de la programación con otras disciplinas&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Pero un Bootcamp inmersivo de programación no es para todos. El programa es intenso y puede ser demasiado para alguien que solo quiera evaluar si el tema le interesa. En ese caso, es recomendable empezar con &lt;a href=&quot;/2014/07/24/los-mejores-recursos-online-para-aprender-desarrollo-web/&quot;&gt;recursos online&lt;/a&gt;, o cursos más cortos, que ofrezcan una introducción a este apasionante mundo de la programación!&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Si tienes un verdadero interés por la programación y estás dispuesto a trabajar muy duro por 12 semanas para convertirte en un desarrollador Web no dudes en &lt;a href=&quot;/apply&quot;&gt;aplicar a &lt;strong&gt;Make it Real&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <id>http://makeitreal.camp/blog/2014/07/27/transformando-la-educacion</id>
+    <link type="text/html" rel="alternate" href="http://makeitreal.camp/blog/2014/07/27/transformando-la-educacion/"/>
+    <title>Transformando la educación</title>
+    <updated>2014-07-27T17:40:58+00:00</updated>
+    <author>
+      <name>Germán Escobar</name>
+    </author>
+    <content type="html">&lt;p&gt;El sistema educativo actual es muy efectivo generando trabajadores reemplazables, obedientes y productivos, pero ineficiente y anticuado para las necesidades del mundo actual. En &lt;strong&gt;Make it Real&lt;/strong&gt; queremos ser el inicio del cambio.&lt;/p&gt;
+
+&lt;p&gt;Desde que tenía 13 años sabía lo que quería hacer por el resto de mi vida: emprender y programar. Pero mi única opción cuando salí del colegio era entrar a la universidad. Aún recuerdo esos años oscuros que amenazaron mi interés por la programación con complicados procesos de ingeniería de software que hoy ya nadie utiliza y que reducen la programación a pegar ladrillos con cemento.&lt;/p&gt;
+
+&lt;p&gt;Pero eso no es la programación. La programación es un acto creativo, que reune las tres habilidades más importantes del mundo de hoy.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Pensamiento crítico&lt;/strong&gt;. Capacidad de mirar los problemas desde diferentes perspectivas y romper el status quo si es necesario. Entender que los “adultos” y los “expertos” no lo saben todo y no siempre tienen la razón.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Auto-aprendizaje&lt;/strong&gt;. La información hoy cuesta muy poco. Actualmente es posible aprender de casi cualquier tema con un computador y una conexión a internet.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Creatividad&lt;/strong&gt;. La capacidad de imaginar, crear e innovar.&lt;/p&gt;
+
+&lt;p&gt;Ya no es un título universitario lo que motiva a la nueva generación, ni lo que las nuevas empresas valoran. La &lt;strong&gt;nueva acreditación&lt;/strong&gt; es lo que cada uno ha creado: un portafolio, un blog, aportes a la comunidad (p.e. Open Source, StackOverflow), etc. &lt;/p&gt;
+
+&lt;p&gt;La educación está dejando de ser un proceso lineal que toma 20 o 25 años, para convierse en el eje central de nuestras vidas. No importa si tenemos cinco, treinta, o noventa años, todos los días son una nueva oportunidad de aprender, crear, y ayudar.&lt;/p&gt;
+
+&lt;h2 id=&quot;redefiniendo-el-fracaso&quot;&gt;Redefiniendo el fracaso&lt;/h2&gt;
+
+&lt;p&gt;Y es que en el sistema educativo actual, el fracaso tiene una connotación negativa. Las malas notas son eso, malas notas. Y por eso para muchos el fracaso se convierte en frustración. Y la frustración es algo que preferiríamos evitar. Y entonces dejamos de intentar. &lt;/p&gt;
+
+&lt;p&gt;En &lt;strong&gt;Make it Real&lt;/strong&gt; creemos que el fracaso es algo que podemos aprovechar. El fracaso nos indica que lo estamos intentando, y eso es bueno, porque podemos corregir e intentarlo nuevamente. Y ese proceso lo podemos repetir varias veces. &lt;strong&gt;Deja de ser fracaso y se convierte en una iteración&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;De eso se trata la programación, de intentar e iterar. Intentar e iterar. Todos los días, varias veces al día. Es la única forma de aprender.&lt;/p&gt;
+
+&lt;h2 id=&quot;una-nica-premisa&quot;&gt;Una única premisa&lt;/h2&gt;
+
+&lt;p&gt;Para transformar la educación solo necesitamos una premisa: aprender algo nuevo cada día, crear algo nuevo cada día. No importa si asistes a la universidad o no, si tienes un trabajo o no, si tienes 5 años o 65, si es martes o sábado: &lt;strong&gt;aprende algo nuevo cada día y crea algo nuevo cada día&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;no-todos-somos-iguales&quot;&gt;No todos somos iguales&lt;/h2&gt;
+
+&lt;p&gt;Desde el punto de vista metodológico, el error más grande que comete el sistema de educación tradicional es asumir que todos saben lo mismo y aprenden al mismo ritmo. Es por eso que hemos diseñado un &lt;a href=&quot;/2014/07/25/un-bootcamp-personalizado/&quot;&gt;bootcamp completamente personalizado&lt;/a&gt; en donde identificamos los conocimientos de cada estudiante y diseñamos un programa que el estudiante puede seguir a su propio ritmo.&lt;/p&gt;
+
+&lt;p&gt;Y es que la mayoría de profesores creen que su su rol más importante es “dictar clase”. Pero eso no es cierto. Por eso en &lt;strong&gt;Make it Real&lt;/strong&gt; no los llamamos profesores, los llamamos mentores. Los mentores guían el aprendizaje de cada estudiante, solucionan dudas y amplían los temas que más se les dificulten. El aprendizaje lo realiza cada uno, a su propio ritmo.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Si tienes un verdadero interés por la programación y estás dispuesto a trabajar muy duro por 12 semanas para convertirte en un desarrollador Web no dudes en &lt;a href=&quot;/apply&quot;&gt;aplicar a &lt;strong&gt;Make it Real&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <id>http://makeitreal.camp/blog/2014/07/25/un-bootcamp-personalizado</id>
+    <link type="text/html" rel="alternate" href="http://makeitreal.camp/blog/2014/07/25/un-bootcamp-personalizado/"/>
+    <title>Un bootcamp personalizado</title>
+    <updated>2014-07-25T17:40:58+00:00</updated>
+    <author>
+      <name>Germán Escobar</name>
+    </author>
+    <content type="html">&lt;p&gt;Desafortunadamente, la mayoría de cursos de programación -presenciales y online- cometen el mismo error que el sistema de educación tradicional: asumir que todos los alumnos saben lo mismo y aprenden al mismo ritmo. En &lt;strong&gt;Make it Real&lt;/strong&gt; queremos arreglar eso.&lt;/p&gt;
+
+&lt;p&gt;Durante el proceso de aplicación, uno de los pasos más importantes es el assesment, en el que identificamos los conocimientos de cada estudiante para diseñarle un programa personalizado que puede seguir a su propio ritmo.&lt;/p&gt;
+
+&lt;p&gt;En &lt;strong&gt;Make it Real&lt;/strong&gt; no hay clases tradicionales. La programación no es algo que se pueda enseñar, es algo que se aprende. Es posible hacer todos los cursos online y leer todos los libros de programación, y aún así, no saber qué hacer ante un editor en blanco o una consola parpadeante. Es por eso que en la primera mitad de &lt;strong&gt;Make it Real&lt;/strong&gt; tendrás que intentar los retos diarios; ahí es donde el verdadero aprendizaje ocurre.&lt;/p&gt;
+
+&lt;p&gt;Los mentores te guiarán, ampliarán los temas que más se te dificulten, trabajarán contigo diariamente para que avances lo más rápido posible, pero el aprendizaje lo realizas tu, a tu ritmo.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Si tienes un verdadero interés por la programación y estás dispuesto a trabajar muy duro por 12 semanas para convertirte en un desarrollador Web no dudes en &lt;a href=&quot;/apply&quot;&gt;aplicar a &lt;strong&gt;Make it Real&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+
+</content>
+  </entry>
+  
+  <entry>
+    <id>http://makeitreal.camp/blog/2014/07/24/los-mejores-recursos-online-para-aprender-desarrollo-web</id>
+    <link type="text/html" rel="alternate" href="http://makeitreal.camp/blog/2014/07/24/los-mejores-recursos-online-para-aprender-desarrollo-web/"/>
+    <title>Los mejores recursos online para aprender desarrollo Web</title>
+    <updated>2014-07-24T17:40:58+00:00</updated>
+    <author>
+      <name>Germán Escobar</name>
+    </author>
+    <content type="html">&lt;p&gt;Entendemos que no todos tienen el tiempo y el dinero para invertir en un bootcamp de programación inmersivo como &lt;strong&gt;Make it Real&lt;/strong&gt;. Es por esto que queremos compartir los mejores recursos que hemos evaluado durante los últimos años para que empieces a aprender por tu cuenta.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Nota:&lt;/strong&gt; No tenemos afiliación con ninguno de estos recursos. Estos realmente &lt;strong&gt;son&lt;/strong&gt; los mejores recursos que hemos encontrado. Si conoces algún otro no dudes en compartirlo en los comentarios.&lt;/p&gt;
+
+&lt;h2 id=&quot;codeorghttpcodeorg&quot;&gt;&lt;a href=&quot;http://code.org/&quot;&gt;Code.org&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Costo&lt;/strong&gt;: Gratis!&lt;br /&gt;
+&lt;strong&gt;Idioma&lt;/strong&gt;: Varios&lt;/p&gt;
+
+&lt;p&gt;Si nunca has tenido contacto con un lenguaje de programación, este es el recurso con el que deberías empezar. Es un juego diseñado para entender la lógica de la programación.&lt;/p&gt;
+
+&lt;h2 id=&quot;codecombathttpscodecombatcom&quot;&gt;&lt;a href=&quot;(https://codecombat.com/)&quot;&gt;CodeCombat&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Costo&lt;/strong&gt;: Gratis!&lt;br /&gt;
+&lt;strong&gt;Idioma&lt;/strong&gt;: Inglés (en proceso de traducción a otros idiomas)&lt;/p&gt;
+
+&lt;p&gt;Otro juego para que practiques la lógica de la programación. Es más avanzado que Code.org.&lt;/p&gt;
+
+&lt;h2 id=&quot;treehousehttpteamtreehousecom&quot;&gt;&lt;a href=&quot;(http://teamtreehouse.com)&quot;&gt;Treehouse&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Costo&lt;/strong&gt;: US$25 - US$50 mensuales&lt;br /&gt;
+&lt;strong&gt;Idioma&lt;/strong&gt;: Inglés&lt;/p&gt;
+
+&lt;p&gt;Está muy bien estructurado y el contenido es de muy buena calidad con videos cortos, quizzes, y ejercicios prácticos que debes realizar en el mismo navegador.&lt;/p&gt;
+
+&lt;p&gt;Además de cursos individuales, Treehouse te ofrece tracks, agrupaciones de cursos con un orden definido para aprender diversos temas tales como Front-end Web Development, Web Design, Rails, iOS, Android, etc.&lt;/p&gt;
+
+&lt;p&gt;El único problema de Treehouse es que el contenido es un poco básico y el ritmo es un poco lento, así que si ya tienes algunos conocimientos es muy probable que este recurso se te quede corto.&lt;/p&gt;
+
+&lt;h2 id=&quot;codeschoolhttpcodeschoolcom&quot;&gt;&lt;a href=&quot;http://codeschool.com&quot;&gt;Codeschool&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Costo&lt;/strong&gt;: US$29 mensuales&lt;br /&gt;
+&lt;strong&gt;Idioma&lt;/strong&gt;: Inglés&lt;/p&gt;
+
+&lt;p&gt;Muy parecido a Treehouse, aunque más avanzado y el ritmo más rápido.&lt;/p&gt;
+
+&lt;p&gt;Hay algunos cursos gratis como &lt;a href=&quot;https://try.github.io&quot;&gt;Try Git&lt;/a&gt;, &lt;a href=&quot;http://tryruby.org/&quot;&gt;Try Ruby&lt;/a&gt;, &lt;a href=&quot;http://try.jquery.com/&quot;&gt;Try JQuery&lt;/a&gt;, y &lt;a href=&quot;http://railsforzombies.org/&quot;&gt;Rails for Zombies&lt;/a&gt;, que son muy básicos, pero los puedes aprovechar si hasta ahora estás comenzando.&lt;/p&gt;
+
+&lt;h2 id=&quot;learn-ruby-on-railshttplearn-railscomlearn-ruby-on-railshtml&quot;&gt;&lt;a href=&quot;http://learn-rails.com/learn-ruby-on-rails.html&quot;&gt;Learn Ruby on Rails&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Costo&lt;/strong&gt;: US$9.99&lt;br /&gt;
+&lt;strong&gt;Idioma&lt;/strong&gt;: Inglés&lt;/p&gt;
+
+&lt;p&gt;Este es un excelente libro para empezar a aprender desarrollo Web con Ruby on Rails. Es un tutorial que te guiará en la creación de una aplicación Web mientras te explica los diferentes conceptos que necesitas aprender para desarrollar tus propias aplicaciones.&lt;/p&gt;
+
+&lt;h2 id=&quot;codeacademyhttpcodeacademycom&quot;&gt;&lt;a href=&quot;http://codeacademy.com&quot;&gt;Codeacademy&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Costo&lt;/strong&gt;: gratis!&lt;br /&gt;
+&lt;strong&gt;Idioma&lt;/strong&gt;: Inglés y Español&lt;/p&gt;
+
+&lt;p&gt;La calidad de Codeacademy es muy buena para ser gratis. Puedes aprender Front-end Web Development (HTML, CSS, Javascript), Python, y Ruby. Personalmente creo que la mayor debilidad es la falta de videos que introduzcan los conceptos (la mayoría de personas están acostumbrados a la clase presencial y los videos son un buen sustituto), pero definitivamente es un recurso que no vale la pena ignorar.&lt;/p&gt;
+
+&lt;h2 id=&quot;udemyhttpudemycom&quot;&gt;&lt;a href=&quot;http://udemy.com&quot;&gt;Udemy&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Costo&lt;/strong&gt;: depende del curso (desde US$0 - US$200)&lt;br /&gt;
+&lt;strong&gt;Idioma&lt;/strong&gt;: Inglés (algunos cursos en Español)&lt;/p&gt;
+
+&lt;p&gt;Udemy tiene una librería gigante de cursos de todo tipo, muchos de programación. Todos los cursos utilizan el formato de videos cortos, algunos con quizzes en el navegador y prácticas que los estudiantes pueden seguir desde su computador.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+Además de esta pequeña lista de recursos, en Internet encontrarás miles de tutoriales y posts que te ayudarán en tu aprendizaje. Recuerda que lo más importante para aprender desarrollo Web es tener un proyecto en el que puedas aplicar todos tus conocimientos. También utiliza las comunidades como &lt;a href=&quot;http://stackoverflow.com&quot;&gt;StackOverflow&lt;/a&gt; en donde puedes resolver dudas específicas (aunque verifica primero antes de preguntar porque es muy probable que tu pregunta ya haya sido respondida).&lt;/p&gt;
+
+&lt;p&gt;En &lt;strong&gt;Make it Real&lt;/strong&gt; utilizamos todos estos recursos para que los alumnos los consuman en la clase o afuera . El objetivo es que en el día solucionen los Make it Challenges (las prácticas) y trabajen de la mano de los mentores aclarando dudas, recibiendo alguna introducción a algún tema, o avanzando en el proyecto.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Si tienes un verdadero interés por la programación y estás dispuesto a trabajar muy duro por 12 semanas para convertirte en un desarrollador Web no dudes en &lt;a href=&quot;/apply&quot;&gt;aplicar a &lt;strong&gt;Make it Real&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <id>http://makeitreal.camp/blog/2014/07/23/el-valor-de-make-it-real</id>
+    <link type="text/html" rel="alternate" href="http://makeitreal.camp/blog/2014/07/23/el-valor-de-make-it-real/"/>
+    <title>El valor de Make it Real</title>
+    <updated>2014-07-23T17:40:58+00:00</updated>
+    <author>
+      <name>Germán Escobar</name>
+    </author>
+    <content type="html">&lt;p&gt;Hoy la información cuesta muy poco y es relativamente fácil de acceder. Y aunque no es fácil descubrir y evaluar la enorme cantidad de recursos que existen en Internet, tampoco es imposible. &lt;del&gt;De hecho, en un futuro post vamos a publicar los mejores recursos online para aprender a programar&lt;/del&gt; Ya lo &lt;a href=&quot;/2014/07/24/los-mejores-recursos-online-para-aprender-desarrollo-web/&quot;&gt;publicamos&lt;/a&gt;. Pero en este post quiero contarles cuál es el verdadero valor de Make it Real.&lt;/p&gt;
+
+&lt;h2 id=&quot;los-mentores&quot;&gt;Los mentores&lt;/h2&gt;
+
+&lt;p&gt;En Make it Real estamos implementando una metodología llamada Flipped Classroom, o Clase Invertida. La idea es utilizar el tiempo de clase para practicar y guiar el aprendizaje de cada estudiante utilizando los mejores recursos online que pueden seguir desde la comodidad de su hogar o en la clase (la mayoría de recursos tienen prácticas incluídas). &lt;/p&gt;
+
+&lt;p&gt;El rol de los mentores es el de guiar ese aprendizaje, solucionar dudas, expandir los temas que más se le dificulten a cada alumno y trabajar de la mano con cada uno de ellos para solucionar los Make it Challenges (las prácticas diarias) y construir el proyecto final.&lt;/p&gt;
+
+&lt;h2 id=&quot;la-red-de-contactos&quot;&gt;La red de contactos&lt;/h2&gt;
+
+&lt;p&gt;Además del aprendizaje, uno de los mayores valores agregados del bootcamp es la posibilidad de interactuar con otras personas con el mismo interés de aprender, de crear; así como la relación con los mentores y con otros líderes técnicos y emprendedores que estarán muy pendientes del avance de los estudiantes y evaluarán la calidad de los proyectos finales.&lt;/p&gt;
+
+&lt;h2 id=&quot;las-alianzas-con-empresas-y-aceleradoras&quot;&gt;Las alianzas con empresas y aceleradoras&lt;/h2&gt;
+
+&lt;p&gt;Nuestro objetivo es que todos los alumnos de &lt;strong&gt;Make it Real&lt;/strong&gt; encuentren un empleo en los dos meses siguientes después de haber completado el bootcamp o que ingresen a alguna aceleradora a desarrollar sus proyectos. &lt;/p&gt;
+
+&lt;p&gt;Estamos creando alianzas con varias empresas que constantemente están en busca de desarrolladores y con aceleradoras interesadas en encontrar candidatos con las capacidades técnicas para construir una aplicación.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Si tienes un verdadero interés por la programación y estás dispuesto a trabajar muy duro por 12 semanas para convertirte en un desarrollador Web no dudes en &lt;a href=&quot;/apply&quot;&gt;aplicar a &lt;strong&gt;Make it Real&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <id>http://makeitreal.camp/blog/2014/07/22/por-que-make-it-real</id>
+    <link type="text/html" rel="alternate" href="http://makeitreal.camp/blog/2014/07/22/por-que-make-it-real/"/>
+    <title>Making it Real</title>
+    <updated>2014-07-22T17:40:58+00:00</updated>
+    <author>
+      <name>Germán Escobar</name>
+    </author>
+    <content type="html">&lt;p&gt;Hace algunos años, mi hermano menor, Alejandro, me pidió que le enseñara a programar. Yo tenía toda la intención pero muy poco tiempo; además de estar viajando con mi familia, estaba escribiendo una nueva versión de &lt;a href=&quot;http://elibom.com/&quot;&gt;elibom.com&lt;/a&gt;. Era simplemente imposible sentarme con él y explicarle. Decidí buscarle algunos cursos online que empezó a hacer por su cuenta y constantemente nos reuniamos por Skype para solucionar dudas. Cuando terminaba un curso le recomendaba el siguiente.&lt;/p&gt;
+
+&lt;p&gt;Así logré evaluar varios cursos de programación y eventualmente me enteré de &lt;a href=&quot;http://www.starterleague.com/&quot;&gt;The Starter League&lt;/a&gt; y &lt;a href=&quot;http://devbootcamp.com/&quot;&gt;DevBootcamp&lt;/a&gt;, dos bootcamps de programación en Silicon Valley. De inmediato supe que necesitábamos algo parecido acá en Lationamérica. Un curso intensivo, guiado por mentores y apoyado de los mejores recursos online (&lt;a href=&quot;http://codeacademy.org&quot;&gt;codeacademy.org&lt;/a&gt;, &lt;a href=&quot;http://teamtreehouse.com&quot;&gt;teamtreehouse.com&lt;/a&gt;, &lt;a href=&quot;http://codeschool.com&quot;&gt;codeschool.com&lt;/a&gt;, &lt;a href=&quot;http://udemy.com&quot;&gt;udemy.com&lt;/a&gt;, etc.) para convertir personas comunes en desarrolladores Web.&lt;/p&gt;
+
+&lt;p&gt;Cuando regresé de viajar con mi familia, decidimos movernos de Bogotá a Medellín. Yo seguía escribiendo la nueva versión de &lt;a href=&quot;http://elibom.com/&quot;&gt;elibom.com&lt;/a&gt; con un grupo de trabajo remoto y le dedicaba el mayor tiempo posible a mi hija.&lt;/p&gt;
+
+&lt;p&gt;Pero la idea del bootcamp permaneció. La demanda por desarrolladores Web sigue aumentando a pesar de las cifras de desempleo. Los salarios están disparados. Un desarrollador Web junior puede empezar gananado 2,000 a 3,000 dólares mensuales, o puede emprender y crear su startup.&lt;/p&gt;
+
+&lt;p&gt;Hace un par de meses un conocido me propuso hacer algunos diplomados en programación acá en Medellín, pero yo tengo mis críticas al sistema de educación formal. Aunque hacer un bootcamp de tiempo completo es mucho más arriesgado, es la única forma en que lo haría. Es la única forma en la que estoy seguro que una persona va a salir lo suficientemente capacitada para trabajar o crear su propia startup. &lt;strong&gt;Make it Real es un bootcamp diseñado para entrenar a las personas que yo mismo contrataría&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Mi hermano Alejandro está ahora trabajando en &lt;a href=&quot;https://www.infinanza.com/&quot;&gt;su startup&lt;/a&gt;. Hace poco ganó un premio en el Startup Pirates con su idea y está consolidando el grupo de trabajo. Son las posibilidades que se abren cuando se aprende a programar.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Si tienes un verdadero interés por la programación y estás dispuesto a trabajar muy duro por 12 semanas para convertirte en un desarrollador Web no dudes en &lt;a href=&quot;/apply&quot;&gt;aplicar a &lt;strong&gt;Make it Real&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+</content>
+  </entry>
+  
+ 
+</feed>

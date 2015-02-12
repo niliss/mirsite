@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Make it Real Blog - JavaScript, jQuery y Ajax </title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="JavaScript, jQuery y Ajax" />
+  <meta property="og:type" content="article" />
+
+  <link rel="alternate" type="application/atom+xml" href="http://makeitreal.camp/2014/10/12/javascript-jquery-y-ajax/atom.xml" title="Atom feed">
+
+  <link rel="stylesheet" href="../../../../css/fonts.css">
+  <link rel="stylesheet" href="../../../../css/style.css">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700%7COpen+Sans:400,300,700' rel='stylesheet' type='text/css'>
+
+  <script src='https://cdn.firebase.com/js/client/1.0.17/firebase.js'></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="../../../../js/jquery.maskedinput.min.js"></script>
+
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/styles/zenburn.min.css">
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-18132057-9', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+</head>
+<body>
+
+  <div class="blog">
+    <header class="main-nav">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <a class="brand" href="../../../../index.html">makeit<strong>real</strong></a>
+          </div>
+          
+        </div>
+      </div>
+    </header>
+    <div class="post">
+
+  <div class="container">
+    <div class="row header"><div class="col-sm-8 col-sm-offset-2"><a href="../../../../blog/index.html">&#8592; Ver todos los posts</a></div></div>
+    <div class="row">
+      <div class="col-sm-8 col-sm-offset-2">
+        <header class="post-header">
+          <h1>JavaScript, jQuery y Ajax</h1>
+          <div class="post-details">
+            Por <span class="post-author">Germán Escobar</span> •  
+            <span class="post-date">Oct 12, 2014</span>
+          </div>
+        </header>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-8 col-sm-offset-2">
+        <article class="post-content">
+          <p>A mediados de los 90’s, la mayoría de sitios Web consistían de páginas estáticas sin ninguna interactividad. Algunos sitios ya generaban páginas dinámicas en el servidor, pero toda acción del usuario requería refrescar la página completamente para ver los cambios. Se necesitaba un lenguaje de programación que corriera en el navegador.</p>
+
+<h2 id="javascript">JavaScript</h2>
+
+<p>A finales del 1995 surge <a href="http://en.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript</a>, un lenguaje creado por <a href="http://en.wikipedia.org/wiki/Brendan_Eich" target="_blank">Brendan Eich</a>, trabajando en ese entonces para <a href="http://en.wikipedia.org/wiki/Netscape" target="_blank">Netscape</a>. (<strong>No confundas <a href="http://en.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript</a> con <a href="http://en.wikipedia.org/wiki/Java_(programming_language)" target="_blank">Java</a></strong>, son lenguajes muy diferentes; simplemente fue una movida de mercadeo porque Java era muy popular en ese momento). <strong>JavaScript permitía manipular HTML</strong> y agregar interactividad en Netscape, que era el navegador más popular en ese momento.</p>
+
+<p>Microsoft lanzó un lenguaje muy similar llamado <a href="http://en.wikipedia.org/wiki/JScript" target="_blank">Jscript</a> para Internet Explorer, y aunque hubo intentos de unificar el lenguaje, nunca hubo consenso. Para el momento en que Internet Explorer se convirtió en el navegador más popular, JavaScript ya era el estándar para escribir código interactivo en el navegador.</p>
+
+<p>Pero había un problema. Aunque el lenguaje era muy similar en los dos navegadores, <strong>la forma de manipular HTML era muy diferente</strong>. A medida que más navegadores aparecían en el mercado, el problema se hacía cada vez más inmanejable. Cada navegador lo hacía a su manera.</p>
+
+<h2 id="jquery">jQuery</h2>
+
+<p>En 2006 surge una librería de <a href="http://en.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript</a> llamada <a href="http://jquery.com/" target="_blank">jQuery</a>, escrita por <a href="http://en.wikipedia.org/wiki/John_Resig" target="_blank">John Resig</a>, para solucionar las diferencias al manipular HTML y escuchar eventos en los navegadores. Aunque ya existían intentos similares en JavaScript, <strong>una de las genialidades de <a href="http://jquery.com/" target="_blank">jQuery</a> era que utilizaba los mismo selectores CSS para ubicar y manipular los diferentes elementos del DOM</strong>.</p>
+
+<div class="well">
+<h3>¿Qué es el DOM?</h3>
+
+EL DOM (Document Object Model) es una representación de un documento HTML que nos permite interactuar con los elementos (etiquetas) del documento HTML. La estructura es en forma de árbol similar a como se organizan los directorios y archivos en un sistema operativo. Puedes encontrar más información del DOM <a href="http://javascript.info/tutorial/dom-nodes" target="_blank">acá</a>.
+</div>
+
+<p>Veamos un ejemplo que cambia el color de un <code>div</code> al hacer click:</p>
+
+<div class="square" style="height: 100px; width: 100px; background: blue; margin: 0 auto 20px;"></div>
+
+<pre><code class="javascript">jQuery('.square').click(function() {
+  jQuery(this).css('background', 'yellow');
+});</code></pre>
+
+<p>En este ejemplo estamos escuchando el evento <code>click</code> sobre el <code>div</code> con clase <code>square</code> y cambiando el color a amarillo cuando el evento es disparado. (Recuerda descargar jQuery en <a href="http://jquery.com/">jquery.com</a> e incluirlo en tu página para que el ejemplo funcione).</p>
+
+<p>Podemos simplificar un poco más el ejemplo reemplazando la palabra <code>jQuery</code> por <code>$</code>, que ahorra algunos caracteres y es la forma más conocida:</p>
+
+<pre><code class="javascript">$('.square').click(function() {
+  $(this).css('background', 'yellow');
+});</code></pre>
+
+<p>jQuery se encarga de las diferencias de los navegadores exponiendo una interfaz clara y fácil de usar que le permite a los desarrolladores concentrarse en la funcionalidad de la aplicación, y no en los detalles de cada navegador.</p>
+
+<h2 id="ajax">Ajax</h2>
+
+<p>¿Cómo intercambiar información con el servidor sin tener que refrescar la página? Ese es el problema que soluciona <a href="http://en.wikipedia.org/wiki/Ajax_(programming)" target="_blank">Ajax</a>. Recuerdo la primera vez que lo vi en acción en la página del <a href="http://www.ausopen.com/" target="_blank">Australian Open</a> viendo el puntaje en vivo; cada vez que cambiaba el puntaje de un partido, parpadeaba y se actualizaba en tiempo real.</p>
+
+<p>Para entender Ajax, es importante primero entender <a href="../../05/http-y-html/index.html" target="_blank">cómo funciona el protocolo HTTP</a>. <strong>La idea es que escribiendo un poco de JavaScript sea posible hacer una petición HTTP y recibir una respuesta del servidor con información que podemos utilizar para actualizar la página</strong>.</p>
+
+<p>La forma de utilizar Ajax en los navegadores es engorrosa y no la voy a mostrar acá. En cambio, jQuery ofrece una interfaz mucho más sencilla y unificada para todos los navegadores:</p>
+
+<pre><code class="javascript">$.get('/url_to_fetch', function(data) {
+  // do something with data
+});</code></pre>
+
+<p>En este ejemplo estamos haciendo una petición HTTP a la ruta <code>/url_to_fetch</code>. La respuesta la encontraremos en <code>data</code>, que puede ser HTML, <a href="http://en.wikipedia.org/wiki/XML" target="_blank">XML</a>, <a href="http://www.json.org/" target="_blank">JSON</a>, o cualquier otra cosa. Últimamente el formato que más se utiliza es <a href="http://www.json.org/" target="_blank">JSON</a> sin embargo.</p>
+
+<div class="well">
+<h3>¿Qué es XML y JSON?</h3>
+
+<p>Son formatos de intercambio de información. Hace unos años <a href="http://en.wikipedia.org/wiki/XML" target="_blank">XML (Extensible Markup Language)</a> era muy popular, pero últimamente <a href="http://www.json.org/" target="_blank">JSON (JavaScript Object Notation)</a> es más usado. La razón es que <a href="http://en.wikipedia.org/wiki/XML" target="_blank">XML</a> es muy verboso y más difícil de interpretar.</p>
+
+<p>Por ejemplo, podríamos representar un vuelo en <a href="http://en.wikipedia.org/wiki/XML" target="_blank">XML</a>:</p>
+
+<pre><code class="xml">&lt;flight&gt;
+    &lt;airline&gt;Oceanic&lt;/airline&gt;
+    &lt;number&gt;815&lt;/number&gt;
+    &lt;departure&gt;
+        &lt;iata&gt;SYD&lt;/iata&gt;
+        &lt;time&gt;2004-09-22 14:55&lt;/time&gt;
+    &lt;/departure&gt;
+    &lt;arrival&gt;
+        &lt;iata&gt;LAX&lt;/iata&gt;
+        &lt;time&gt;2004-09-23 10:42&lt;/time&gt;
+    &lt;/arrival&gt;
+&lt;/flight&gt;</code></pre>
+
+<p>O en <a href="http://www.json.org/" target="_blank">JSON</a>:</p>
+
+<pre><code class="javascrip">{
+  "airline": “Oceanic”,
+  "number": 815,
+  "departure": {
+   "iata": “SYD”,
+   "time": “2004-09-22 14:55”
+  },
+  "arrival": {
+   "iata": “LAX”,
+   "time": “2004-09-23 10:42”
+  }
+}</code></pre>
+
+Otra ventaja de <a href="http://www.json.org/" target="_blank">JSON</a> es que es muy fácil de manipular en JavaScript.
+</div>
+
+<h2 id="ms-recursos">Más recursos</h2>
+
+<ul>
+  <li><a href="http://try.jquery.com/">http://try.jquery.com/</a></li>
+  <li><a href="http://javascript.info/tutorial/dom-nodes">http://javascript.info/tutorial/dom-nodes</a></li>
+  <li><a href="http://teamtreehouse.com/library/ajax-basics">http://teamtreehouse.com/library/ajax-basics</a></li>
+</ul>
+
+<hr />
+
+<p>Si tienes un verdadero interés por la programación y quieres aprender a diseñar e implementar tus propias aplicaciones Web no dudes en <a href="../../../../apply/index.html">aplicar a Make it Real</a>!</p>
+
+<script>
+	jQuery('.square').click(function() {
+	  jQuery(this).css('background', 'yellow');
+	});
+</script>
+
+
+        </article>
+      </div>
+    </div>
+    <div class="row" style="margin-top: 20px;"><div class="col-sm-8 col-sm-offset-2"><a href="../../../../blog/index.html">&#8592; Ver todos los posts</a></div></div>
+
+    <div class="row footer">
+      <div class="col-sm-8 col-sm-offset-2">
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = 'makeitreal'; // required: replace example with your forum shortname
+
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </div>
+    </div>
+  </div>
+
+</div>
+  </div>
+</body>
+</html>

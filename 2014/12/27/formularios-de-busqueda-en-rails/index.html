@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Make it Real Blog - Formularios de Búsqueda en Rails </title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="Formularios de Búsqueda en Rails" />
+  <meta property="og:type" content="article" />
+
+  <link rel="alternate" type="application/atom+xml" href="http://makeitreal.camp/2014/12/27/formularios-de-busqueda-en-rails/atom.xml" title="Atom feed">
+
+  <link rel="stylesheet" href="../../../../css/fonts.css">
+  <link rel="stylesheet" href="../../../../css/style.css">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700%7COpen+Sans:400,300,700' rel='stylesheet' type='text/css'>
+
+  <script src='https://cdn.firebase.com/js/client/1.0.17/firebase.js'></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="../../../../js/jquery.maskedinput.min.js"></script>
+
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/styles/zenburn.min.css">
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-18132057-9', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+</head>
+<body>
+
+  <div class="blog">
+    <header class="main-nav">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <a class="brand" href="../../../../index.html">makeit<strong>real</strong></a>
+          </div>
+          
+        </div>
+      </div>
+    </header>
+    <div class="post">
+
+  <div class="container">
+    <div class="row header"><div class="col-sm-8 col-sm-offset-2"><a href="../../../../blog/index.html">&#8592; Ver todos los posts</a></div></div>
+    <div class="row">
+      <div class="col-sm-8 col-sm-offset-2">
+        <header class="post-header">
+          <h1>Formularios de Búsqueda en Rails</h1>
+          <div class="post-details">
+            Por <span class="post-author">Germán Escobar</span> •  
+            <span class="post-date">Dec 27, 2014</span>
+          </div>
+        </header>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-8 col-sm-offset-2">
+        <article class="post-content">
+          <p>En Ruby on Rails, los formularios generalmente se usan para crear o editar modelos. Sin embargo, un caso de uso muy frecuente es el de buscar o filtrar información usando un formulario. Por ejemplo, imaginemos una aplicación que tiene una lista de gastos que se puede filtrar por los siguientes criterios:</p>
+
+<ul>
+  <li>El concepto del gasto.</li>
+  <li>La categoría a la que pertenece el gasto.</li>
+</ul>
+
+<p>La siguiente imagen muestra la lista de gastos y el formulario de búsqueda que queremos implementar.</p>
+
+<p><img src="../../../../images/mis-finanzas.png" alt="Mis Finanzas" /></p>
+
+<p>Cuando creamos un formulario para crear o editar un modelo, generalmente utilizamos el tag <code>form_for</code>. Sin embargo, <strong>existe otro tag llamado <code>form_tag</code> que se utiliza para crear formularios con otros fines diferentes al CRUD</strong> y es el que vamos a utilizar para nuestro formulario de búsqueda.</p>
+
+<p>También es importante tener en cuenta que, <strong>en vez de un llamado <code>POST</code>, queremos hacer un llamado <code>GET</code>. De esta forma podemos compartir la URL con los criterios de búsqueda</strong> por correo o por cualquier otro medio. Por ejemplo, la URL <code>http://midominio.com/expenses?concept=corral&amp;category=4</code> listaría los gastos que contengan la cadena “corral” en el concepto, y que pertenezcan a la categoría 4 (a esto se le conoce como Bookmarkable URL’s o RESTful URL’s).</p>
+
+<p>Teniendo en cuenta los dos puntos anteriores, el markup del formulario sería el siguiente:</p>
+
+<pre><code class="overflow erb">&lt;%= form_tag expenses_path, method: :get do %&gt;
+  &lt;div class=&quot;form-group&quot;&gt;
+    &lt;%= text_field_tag :concept, params[:concept], class: &quot;form-control&quot;, placeholder: &quot;Concepto&quot; %&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;form-group&quot;&gt;
+    &lt;%= select_tag :category_id, options_from_collection_for_select(Category.all, &quot;id&quot;, &quot;name&quot;, params[:category_id]), prompt: &quot;Categor&#237;a&quot;, class: &quot;form-control&quot; %&gt;
+  &lt;/div&gt;
+  &lt;%= submit_tag &quot;Buscar&quot;, name: nil, class: &quot;btn btn-primary btn-md&quot; %&gt;
+&lt;% end %&gt;</code></pre>
+
+<p>La primera línea (el <code>form_tag</code>) genera el siguiente HTML:</p>
+
+<pre><code class="html">&lt;form action=&quot;/expenses&quot; method=&quot;get&quot;&gt;
+  ...
+&lt;/form&gt;</code></pre>
+
+<p>Fíjate que estamos enviando el formulario a la misma acción que utilizamos para listar los gastos (<code>/expenses</code>). Veamos la implementación de esa acción en el controlador:</p>
+
+<pre><code class="overflow ruby">class ExpensesController &lt; ApplicationController
+  def index
+    @expenses = Expense.order("date DESC")
+    if params[:concept].present?
+      @expenses = @expenses.where("concept ILIKE ?", "%#{params[:concept]}%")
+    end
+    if params[:category_id].present?
+      @expenses = @expenses.where("category_id = ?", params[:category_id])
+    end
+  end
+end</code></pre>
+
+<p><strong>Nota:</strong> En este trozo de código estoy utilizando <code>ILIKE</code> que es una funcionalidad exclusiva de PostgreSQL para ignorar mayúsculas o minúsculas al hacer la comparación.</p>
+
+<p>El hash <code>params</code> recibe los datos del formulario que vienen en el URL. Si no recibimos alguno de los parámetros (<code>concept</code> o <code>category_id</code>), simplemente no tenemos en cuenta ese criterio de búsqueda.</p>
+
+<hr />
+
+<p>Crear un formulario de búsqueda en Ruby on Rails es muy fácil. Solo debes tener en cuenta algunos detalles:</p>
+
+<ul>
+  <li>Utilizar <code>form_tag</code> en vez de <code>form_for</code>.</li>
+  <li>Los tags de los campos también son diferentes a los que se utilizan en <code>form_for</code>. La documentación de estos campos se encuentra en <a href="http://guides.rubyonrails.org/form_helpers.html">las guías de Rails</a>.</li>
+  <li>Se recomienda utilizar el método <code>GET</code> en vez de <code>POST</code> para un formulario de búsqueda.</li>
+  <li>Generalmente puedes reutilizar el mismo controlador y la misma acción que utilizas para listar.</li>
+</ul>
+
+<p>Espero que este post te ayude a crear tus formularios de búsqueda. Puedes consultar el código fuente de la aplicación en <a href="https://github.com/makeitrealcamp/rails-search-form">Github</a>.</p>
+
+<h3 id="ms-recursos">Más Recursos</h3>
+
+<ul>
+  <li><a href="http://railscasts.com/episodes/37-simple-search-form">Railscast #37 - Simple Search Form</a></li>
+  <li><a href="http://guides.rubyonrails.org/form_helpers.html">Rails Guides - Form Helpers</a></li>
+  <li><a href="http://www.jorgecoca.com/buils-search-form-ruby-rails/">How to build a simple search form with Ruby on Rails</a></li>
+</ul>
+
+        </article>
+      </div>
+    </div>
+    <div class="row" style="margin-top: 20px;"><div class="col-sm-8 col-sm-offset-2"><a href="../../../../blog/index.html">&#8592; Ver todos los posts</a></div></div>
+
+    <div class="row footer">
+      <div class="col-sm-8 col-sm-offset-2">
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = 'makeitreal'; // required: replace example with your forum shortname
+
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </div>
+    </div>
+  </div>
+
+</div>
+  </div>
+</body>
+</html>
